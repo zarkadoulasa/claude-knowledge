@@ -1,0 +1,14 @@
+# Python virtualenv for the vault's tools (recreate with:
+# python3 -m venv .tools/.venv && .tools/.venv/bin/pip install youtube-transcript-api yt-dlp pyyaml)
+.tools/.venv/
+
+# Obsidian per-machine UI state
+.obsidian/workspace.json
+.obsidian/workspaces.json
+
+# Working files that never belong in the vault
+*.transcript.md
+*.meta.json
+
+# macOS
+.DS_Store
