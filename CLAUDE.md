@@ -19,7 +19,14 @@ The structure follows the LLM Wiki pattern — plain markdown files, an index, a
 | `People/` | Creators and people referenced in sources | Asked who someone is or what else they've taught |
 | `Templates/` | Note templates — follow them | Creating any note |
 | `Ingest Log.md` | Append-only record of every ingest | Checking what's been added and when |
-| `.tools/` | `fetch_youtube.py`, `check_links.py` and their venv (hidden from Obsidian) | Ingesting or validating |
+| `.tools/` | `fetch_youtube.py`, `check_links.py`, `sync.py`, `contribute.py` and their venv (hidden from Obsidian) | Ingesting, validating, syncing, contributing |
+
+## Shared knowledge: sync first, contribute after
+
+This vault is shared through https://github.com/zarkadoulasa/claude-knowledge. Every copy pulls in what others add and sends back what it adds.
+
+- **Sync before using the vault.** Hooks in `.claude/settings.json` run `python3 .tools/sync.py` when a session starts and before each prompt (at most once every 10 minutes). Lines starting with `[knowledge sync]` report the result. When it lists changed notes, re-read any of them you already read this session before answering. If it says nothing was pulled because of uncommitted changes, another branch, or conflicts, tell the user. If you see no `[knowledge sync]` line at session start (hooks not trusted or disabled), run `python3 .tools/sync.py --force` yourself before answering.
+- **Contribute every change to the notes.** After an ingest, or any other edit to vault notes the user wants kept, open a pull request with `python3 .tools/contribute.py` (see step 8 of the `ingest-youtube` skill). Don't leave note changes uncommitted, because the sync skips pulling while they are there. Never push straight to `main` on the shared repo.
 
 ## Routing rules
 

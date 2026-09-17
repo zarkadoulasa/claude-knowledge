@@ -1,0 +1,2 @@
+# Every ingest appends a row here; keep both sides when contributions overlap.
+Ingest[[:space:]]Log.md merge=union

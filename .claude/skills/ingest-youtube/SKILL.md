@@ -7,6 +7,10 @@ description: Ingest a YouTube tutorial into the Claude Knowledge Bank vault — 
 
 Follow the conventions in `CLAUDE.md` throughout.
 
+## 0. Sync
+
+Run `python3 .tools/sync.py --force` so the plan builds on the latest shared notes. If it reports that nothing was pulled (uncommitted changes, another branch, conflicts), sort that out with the user before writing.
+
 ## 1. Fetch
 
 ```bash
@@ -63,6 +67,21 @@ For long or dense videos, fan out: one agent per group of notes → an adversari
 - Add new notes to `Home.md` in the right sections (keep each section sorted) and update the source count.
 - Append a row to `Ingest Log.md`: date, source, notes created, notes updated.
 
-## 8. Report to the user
+## 8. Contribute
 
-The 3–5 most useful takeaways, which notes were created/updated, and 2–3 systems that could be built from the tutorial.
+Every ingest goes back to the shared repo as a pull request, so everyone else gets the knowledge.
+
+1. Write a PR description to the scratch directory, not the vault: the video link, a 2–3 line summary, the notes created, the notes updated, and the verification done (fact-check fixes, `check_links.py` result).
+2. From the vault root on `main`, run:
+   `python3 .tools/contribute.py --title "Ingest: <Creator> - <Video title>" --body-file <scratch>/pr-body.md`
+   For a batch, use one PR titled `Ingest: batch of N (<short theme>)`.
+3. Handle the exit code:
+   - **0**: it prints the PR link.
+   - **2**: the GitHub CLI is missing or not signed in. Tell the user to install `gh` and run `gh auth login`, then rerun. The notes are already committed locally and stay available.
+   - **3**: newer shared notes conflict (usually `Home.md`). Resolve each file by keeping both sides' entries and recounting totals. Then `git add` the files, run `git -c core.editor=true cherry-pick --continue`, and rerun the same command with `--resume`.
+   - **1**: read the message and fix the cause. Broken links must be fixed before contributing.
+4. Never push directly to `main` on the shared repo.
+
+## 9. Report to the user
+
+The 3–5 most useful takeaways, which notes were created/updated, 2–3 systems that could be built from the tutorial, and the PR link.
