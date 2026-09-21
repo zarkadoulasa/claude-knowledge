@@ -2,8 +2,8 @@
 type: person
 role: "Creator — YouTube educator who builds AI operating systems and second brains with Claude Code"
 links: ["https://www.youtube.com/channel/UC2ojq-nuP8ceeHqiroeKhBA", "https://www.skool.com/ai-automation-society/about", "https://x.com/nateherk", "https://www.linkedin.com/in/nateherkelman/"]
-sources: ["[[Nate Herk - Every Level of a Claude Second Brain]]", "[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[Nate Herk - Set Up the Karpathy LLM Wiki with Obsidian]]", "[[Nate Herk - Claude as a One-Person Marketing Team]]", "[[Nate Herk - The Scrollcraft Website Design Skill]]", "[[Nate Herk - Build Skills Instead of Agents]]"]
-tags: [topic/second-brain, topic/claude-code, topic/automation, topic/agents, topic/teams, topic/context, topic/planning, topic/verification, topic/scheduling, topic/memory, topic/skills, topic/design, topic/marketing, topic/media]
+sources: ["[[Nate Herk - Every Level of a Claude Second Brain]]", "[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[Nate Herk - Set Up the Karpathy LLM Wiki with Obsidian]]", "[[Nate Herk - Claude as a One-Person Marketing Team]]", "[[Nate Herk - The Scrollcraft Website Design Skill]]", "[[Nate Herk - Build Skills Instead of Agents]]", "[[Nate Herk - Stanford STORM Method as a Claude Research Skill]]"]
+tags: [topic/second-brain, topic/claude-code, topic/automation, topic/agents, topic/teams, topic/context, topic/planning, topic/verification, topic/scheduling, topic/memory, topic/skills, topic/design, topic/marketing, topic/media, topic/retrieval, topic/subagents]
 ---
 
 # Nate Herk
@@ -31,6 +31,7 @@ tags: [topic/second-brain, topic/claude-code, topic/automation, topic/agents, to
 - [[Nate Herk - Claude as a One-Person Marketing Team]] — creator (August 2026). Beginner walkthrough: a brand-aware Claude Code project for a made-up drink brand, driving [[Higgsfield]] through a custom connector.
 - [[Nate Herk - The Scrollcraft Website Design Skill]] — creator (August 2026). Demos [[Scrollcraft]], his free skill for scroll-driven landing pages, by redesigning his community's site live.
 - [[Nate Herk - Build Skills Instead of Agents]] — creator (September 2026). Retells [[Barry Zhang]] and [[Mahesh Murag]]'s Anthropic talk, then turns it into four practices for making skills work, mixing the talk's examples with his own prompts and tests (see the Source note's Caveats).
+- [[Nate Herk - Stanford STORM Method as a Claude Research Skill]] — creator (June 2026). Rebuilds Stanford's STORM method as a free Claude skill: five expert lenses research a topic, a contradiction map surfaces disagreements, and an adversarial pass verifies every citation before returning an HTML briefing. Also the clearest of his subagents-vs-agent-teams explanations. → [[Multi-Perspective Research]], [[Build a STORM Multi-Perspective Research Skill]].
 
 ## His Herk2 setup (June 2026 video)
 
@@ -155,6 +156,8 @@ None of the following comes from either video.
 - [[Nate Herk - Claude as a One-Person Marketing Team]]
 - [[Nate Herk - The Scrollcraft Website Design Skill]]
 - [[Nate Herk - Build Skills Instead of Agents]]
+- [[Nate Herk - Stanford STORM Method as a Claude Research Skill]]
+- [[Multi-Perspective Research]]
 - [[Scrollcraft]]
 - [[Higgsfield]]
 - [[Barry Zhang]]

@@ -1,7 +1,7 @@
 ---
 type: concept
 aliases: ["Self-Verification", "Who Judges Done"]
-sources: ["[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[AI LABS - Types of Claude Loops Explained]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[Anthropic - What Is Claude Managed Agents]]", "[[AI LABS - Claude Design Skills for Beautiful Sites]]", "[[AI LABS - Eight GitHub Repos to Upgrade Claude Code]]", "[[Nate Herk - Build Skills Instead of Agents]]", "[[Nate Herk - The Scrollcraft Website Design Skill]]", "[[Chase AI - GPT-6 Astra Motion Design in After Effects]]", "[[Nate Herk - Claude as a One-Person Marketing Team]]"]
+sources: ["[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[AI LABS - Types of Claude Loops Explained]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[Anthropic - What Is Claude Managed Agents]]", "[[AI LABS - Claude Design Skills for Beautiful Sites]]", "[[AI LABS - Eight GitHub Repos to Upgrade Claude Code]]", "[[Nate Herk - Build Skills Instead of Agents]]", "[[Nate Herk - The Scrollcraft Website Design Skill]]", "[[Chase AI - GPT-6 Astra Motion Design in After Effects]]", "[[Nate Herk - Claude as a One-Person Marketing Team]]", "[[Nate Herk - Stanford STORM Method as a Claude Research Skill]]"]
 tags: [topic/verification, topic/loops, topic/agents, topic/subagents, topic/claude-code, topic/managed-agents, topic/design, topic/skills, topic/media]
 ---
 
@@ -47,6 +47,7 @@ Before Claude calls a task finished, it should run something objective against t
 | Runtime checks inside the running app | Failures hiding behind an app that loads and matches the design, where agents tend to stop ([01:40](https://www.youtube.com/watch?v=Ua0APTMVcb8&t=100s)) | [[AI LABS - Eight GitHub Repos to Upgrade Claude Code]]: Reticle [02:00](https://www.youtube.com/watch?v=Ua0APTMVcb8&t=120s) |
 | Lint rules for coding patterns agents tend to write | Mistakes you'd otherwise read the code to spot | Repos video: anti-slop [11:43](https://www.youtube.com/watch?v=Ua0APTMVcb8&t=703s) |
 | Evidence suited to the output: rendered slides, primary sources, persona subagents | Cropped slides, unsupported claims, flat copy | Skills video [07:17](https://www.youtube.com/watch?v=HIRDzMtuWFk&t=437s) |
+| A verification pass that checks every citation against its primary source and marks it confirmed / corrected / demoted | Wrong or hallucinated citations in a research briefing | STORM video [02:26](https://www.youtube.com/watch?v=Tj3018n5MVg&t=146s), [05:43](https://www.youtube.com/watch?v=Tj3018n5MVg&t=343s) |
 
 ### Who judges done: the spectrum
 
@@ -145,6 +146,7 @@ A person can also be the judge. In the Managed Agents incident demo, a permissio
 - [[AI LABS - Eight GitHub Repos to Upgrade Claude Code]] ([[AI LABS]]): Reticle explains each failure so the agent can fix it and retry ([02:31](https://www.youtube.com/watch?v=Ua0APTMVcb8&t=151s)).
 - [[Nate Herk - Build Skills Instead of Agents]] ([[Nate Herk]]): verification is the most important of his four skill practices ([06:46](https://www.youtube.com/watch?v=HIRDzMtuWFk&t=406s)).
 - [[Nate Herk - The Scrollcraft Website Design Skill]] ([[Scrollcraft]]): watch the verification pass to learn how the harness behaves ([09:06](https://www.youtube.com/watch?v=QUI6Ug4cHnE&t=546s)).
+- [[Nate Herk - Stanford STORM Method as a Claude Research Skill]] ([[Multi-Perspective Research]]): builds verification into a research pipeline. A dedicated pass of six agents verifies the first-pass findings ([02:26](https://www.youtube.com/watch?v=Tj3018n5MVg&t=146s)), the skill **adversarially peer-reviews its own outputs and verifies every citation against its primary source before delivering** ([05:43](https://www.youtube.com/watch?v=Tj3018n5MVg&t=343s)), and each source ends marked confirmed / corrected / demoted so the verified V2 is trusted over V1 ([00:26](https://www.youtube.com/watch?v=Tj3018n5MVg&t=26s)). Findings are ranked by reliability with the lenses that supported vs challenged each ([02:42](https://www.youtube.com/watch?v=Tj3018n5MVg&t=162s)). Caveat: the peer review runs on the same model family as the writers, so it shares blind spots — the citation check against primary sources is what makes it more than self-grading. See [[Grounding Research in Real Sources]].
 
 ## Beyond the source
 
@@ -181,8 +183,8 @@ A person can also be the judge. In the Managed Agents incident demo, a permissio
 
 ## Related
 
-- **Concepts:** [[Agent Laziness]], [[Loop Engineering]], [[Plan Before Executing]], [[Subagents and Agent Teams]], [[Context Window Management]], [[Permissions and Approval Gates]], [[Escaping the Default AI Design Look]], [[Agent Skills]]
-- **Techniques:** [[Build Verification into Every Task]], [[Evidence-Gated Completion Ledger]], [[Tests-First Goal Loop]], [[Multi-Agent Review and Scoring Loops]], [[Plan-First Workflow]], [[Skill Improvement Loop]], [[Build a Distinctive Site with Design Skills]], [[Build an Event-Triggered Managed Agent]], [[Build a Scroll-Driven Landing Page]], [[Storyboard-First AI Video and Motion Graphics]], [[Build a Brand-Aware Marketing Project]]
-- **Tools:** [[Claude Code]], [[Claude in Chrome]], [[Unlazy]], [[Claude Managed Agents]], [[Claude Design]], [[Scrollcraft]], [[OpenAI Codex]], [[Higgsfield]]
+- **Concepts:** [[Agent Laziness]], [[Loop Engineering]], [[Plan Before Executing]], [[Subagents and Agent Teams]], [[Context Window Management]], [[Permissions and Approval Gates]], [[Escaping the Default AI Design Look]], [[Agent Skills]], [[Multi-Perspective Research]], [[Grounding Research in Real Sources]]
+- **Techniques:** [[Build Verification into Every Task]], [[Evidence-Gated Completion Ledger]], [[Tests-First Goal Loop]], [[Multi-Agent Review and Scoring Loops]], [[Plan-First Workflow]], [[Skill Improvement Loop]], [[Build a Distinctive Site with Design Skills]], [[Build an Event-Triggered Managed Agent]], [[Build a Scroll-Driven Landing Page]], [[Storyboard-First AI Video and Motion Graphics]], [[Build a Brand-Aware Marketing Project]], [[Build a STORM Multi-Perspective Research Skill]]
+- **Tools:** [[Claude Code]], [[Claude in Chrome]], [[Unlazy]], [[Claude Managed Agents]], [[Claude Design]], [[Scrollcraft]], [[OpenAI Codex]], [[Higgsfield]], [[Claude Deep Research]]
 - **People:** [[The Coding Sloth]], [[Nate Herk]], [[AI LABS]], [[Leon Lin]], [[Chase AI]]
 - [[Home]]

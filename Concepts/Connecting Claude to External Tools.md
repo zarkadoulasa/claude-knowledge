@@ -1,7 +1,7 @@
 ---
 type: concept
 aliases: ["MCP", "Connectors"]
-sources: ["[[Jay E - The ARMS Framework for a Claude Agentic OS]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[Simon Pittman - Set Up Claude Cowork]]", "[[Anthropic - What Is Claude Managed Agents]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]", "[[Nate Herk - Claude as a One-Person Marketing Team]]", "[[Jack Roberts - Design Systems, Critic Loops and a Design OS]]", "[[Jay E - Claude and GPT-Image-2 for On-Brand Design]]", "[[Nate Herk - The Scrollcraft Website Design Skill]]", "[[AI LABS - Design Skills from Landing Pages to Mobile Apps]]", "[[AI LABS - Eight GitHub Repos to Upgrade Claude Code]]", "[[Chase AI - GPT-6 Astra Motion Design in After Effects]]"]
+sources: ["[[Jay E - The ARMS Framework for a Claude Agentic OS]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[Simon Pittman - Set Up Claude Cowork]]", "[[Anthropic - What Is Claude Managed Agents]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]", "[[Nate Herk - Claude as a One-Person Marketing Team]]", "[[Jack Roberts - Design Systems, Critic Loops and a Design OS]]", "[[Jay E - Claude and GPT-Image-2 for On-Brand Design]]", "[[Nate Herk - The Scrollcraft Website Design Skill]]", "[[AI LABS - Design Skills from Landing Pages to Mobile Apps]]", "[[AI LABS - Eight GitHub Repos to Upgrade Claude Code]]", "[[Chase AI - GPT-6 Astra Motion Design in After Effects]]", "[[David Stuckler - Claude Connectors and Skills for Academic Research]]"]
 tags: [topic/mcp, topic/context, topic/claude-code, topic/cowork, topic/managed-agents, topic/agentic-os, topic/permissions, topic/media, topic/skills]
 ---
 
@@ -125,6 +125,7 @@ The table combines the sources' advice. The choices in the middle column are thi
 - [[AI LABS - Design Skills from Landing Pages to Mobile Apps]]: shadcn's skill and its MCP server are two parts that work together ([04:01](https://www.youtube.com/watch?v=Ot582-E61ac&t=241s)). The MCP gives live access to the component registry, and the skill's rules, patterns and project context give the agent judgement to use components correctly ([04:49](https://www.youtube.com/watch?v=Ot582-E61ac&t=289s)).
 - [[AI LABS - Eight GitHub Repos to Upgrade Claude Code]]: picks the MCP server over the CLI so the agent finds UI Skills without being told ([05:17](https://www.youtube.com/watch?v=Ua0APTMVcb8&t=317s)). Caliper can test whether an MCP server earns its tokens ([11:29](https://www.youtube.com/watch?v=Ua0APTMVcb8&t=689s)).
 - [[Chase AI - GPT-6 Astra Motion Design in After Effects]]: uses a vendor plugin that connects the model to a desktop app and bundles skills for it. The model drives After Effects with scripts and computer use ([01:38](https://www.youtube.com/watch?v=C8dWdic-oK4&t=98s)). His demo runs in Codex.
+- [[David Stuckler - Claude Connectors and Skills for Academic Research]]: frames connectors as giving Claude "vision" into the tools and databases you already use ([01:15](https://www.youtube.com/watch?v=GWtx-d3dALQ&t=75s)), added from Customize → Connectors ([01:04](https://www.youtube.com/watch?v=GWtx-d3dALQ&t=64s)). His research picks — [[Consensus]], PubMed, bioRxiv, clinical trials — are the anti-hallucination use of a connector: real, clickable peer-reviewed sources instead of invented references ([02:02](https://www.youtube.com/watch?v=GWtx-d3dALQ&t=122s), [04:56](https://www.youtube.com/watch?v=GWtx-d3dALQ&t=296s)). He also adds productivity connectors (Canva, Gmail/Outlook, Calendar, Todoist, Zoom, Miro), notes coverage is partial so a connector complements rather than replaces existing tools ([05:55](https://www.youtube.com/watch?v=GWtx-d3dALQ&t=355s)). See [[Grounding Research in Real Sources]] and [[Set Up Claude Research Connectors]].
 
 ## Beyond the source
 
@@ -162,8 +163,8 @@ The table combines the sources' advice. The choices in the middle column are thi
 
 ## Related
 
-- Concepts: [[Context vs Connections]] · [[Permissions and Approval Gates]] · [[Context Window Management]] · [[Agent Skills]] · [[Build vs Install Third-Party Skills]] · [[Agentic OS]] · [[Routines and Scheduled Tasks]] · [[Generating Images and Video with Claude]]
-- Techniques: [[Build a Context Map for a Connected Tool]] · [[Tiered Lookup Routing]] · [[Configure Safe Autonomy Permissions]] · [[Set Up Claude Cowork]] · [[Build an Event-Triggered Managed Agent]] · [[Schedule Recurring Claude Tasks]]
-- Tools: [[Claude Code]] · [[Claude Cowork]] · [[Claude Managed Agents]] · [[Claude in Chrome]] · [[Higgsfield]] · [[shadcn]]
-- People: [[Jay E]] · [[The Coding Sloth]] · [[Nate Herk]] · [[Simon Pittman]] · [[Ras Mic]] · [[Jack Roberts]] · [[AI LABS]] · [[Chase AI]]
+- Concepts: [[Context vs Connections]] · [[Permissions and Approval Gates]] · [[Context Window Management]] · [[Agent Skills]] · [[Build vs Install Third-Party Skills]] · [[Agentic OS]] · [[Routines and Scheduled Tasks]] · [[Generating Images and Video with Claude]] · [[Grounding Research in Real Sources]]
+- Techniques: [[Build a Context Map for a Connected Tool]] · [[Tiered Lookup Routing]] · [[Configure Safe Autonomy Permissions]] · [[Set Up Claude Cowork]] · [[Build an Event-Triggered Managed Agent]] · [[Schedule Recurring Claude Tasks]] · [[Set Up Claude Research Connectors]]
+- Tools: [[Claude Code]] · [[Claude Cowork]] · [[Claude Managed Agents]] · [[Claude in Chrome]] · [[Higgsfield]] · [[shadcn]] · [[Consensus]]
+- People: [[Jay E]] · [[The Coding Sloth]] · [[Nate Herk]] · [[Simon Pittman]] · [[Ras Mic]] · [[Jack Roberts]] · [[AI LABS]] · [[Chase AI]] · [[David Stuckler]]
 - [[Home]]

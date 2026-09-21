@@ -2,7 +2,7 @@
 type: tool
 category: AI coding agent / agent harness (OpenAI)
 website: https://github.com/openai/codex
-sources: ["[[Nate Herk - Every Level of a Claude Second Brain]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[AI LABS - Claude Design Skills for Beautiful Sites]]", "[[Jay E - The ARMS Framework for a Claude Agentic OS]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]", "[[Matt Wolfe - Second Brain Wiki with Journal and CRM]]", "[[Chase AI - GPT-6 Astra Motion Design in After Effects]]", "[[AI LABS - Eight GitHub Repos to Upgrade Claude Code]]"]
+sources: ["[[Nate Herk - Every Level of a Claude Second Brain]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[AI LABS - Claude Design Skills for Beautiful Sites]]", "[[Jay E - The ARMS Framework for a Claude Agentic OS]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]", "[[Matt Wolfe - Second Brain Wiki with Journal and CRM]]", "[[Chase AI - GPT-6 Astra Motion Design in After Effects]]", "[[AI LABS - Eight GitHub Repos to Upgrade Claude Code]]", "[[Nate Herk - Stanford STORM Method as a Claude Research Skill]]"]
 tags: [topic/portability, topic/agents, topic/second-brain, topic/memory, topic/skills, topic/automation, topic/scheduling, topic/media]
 ---
 
@@ -105,6 +105,11 @@ OpenAI's coding agent. The official description is under *Beyond the source*. In
 
 - **Codex appears only in the title.** The narration names Claude Code, and Chisle's tool-output trimming works only there ([04:03](https://www.youtube.com/watch?v=Ua0APTMVcb8&t=243s)). Check each repo's README for Codex support.
 
+### [[Nate Herk - Stanford STORM Method as a Claude Research Skill]]
+
+- **Codex as an independent judge.** To compare his STORM HTML briefing against Claude Code's Deep Research report, he pasted both into Codex — "a completely different AI model" — and asked which was better ([03:38](https://www.youtube.com/watch?v=Tj3018n5MVg&t=218s)). Codex picked the briefing on all six axes: evidence quality, source diversity, thesis strength, actionability, risk control, and fit for video/content ([03:44](https://www.youtube.com/watch?v=Tj3018n5MVg&t=224s)–[04:03](https://www.youtube.com/watch?v=Tj3018n5MVg&t=243s)). Using a different model to grade output sidesteps the self-grading bias noted in [[Verification Before Done]], though this is one informal run, not a benchmark.
+- **Skills are cross-harness.** He notes the STORM skill works in Codex or any agent; in Claude it must sit in `.claude`, while `.codex`/`.agents` folders serve other agents ([06:48](https://www.youtube.com/watch?v=Tj3018n5MVg&t=408s)). This matches the Agent Skills open standard (see the second-sources section below).
+
 ## Notes
 
 - **What the video doesn't cover** (Nate Herk). It never shows Codex running, Codex configuration, or any memory feature Codex has. The only guidance is the file-level bridge above.
@@ -168,5 +173,5 @@ OpenAI's coding agent. The official description is under *Beyond the source*. In
 - **People:** [[Nate Herk]]
 - **More people:** [[The Coding Sloth]], [[AI LABS]], [[Jay E]], [[Ras Mic]], [[Matt Wolfe]], [[Chase AI]]
 - **Source:** [[Nate Herk - Every Level of a Claude Second Brain]]
-- **More sources:** [[The Coding Sloth - 1000 Hours of Claude Code Lessons]], [[AI LABS - The Unlazy Skill for Lazy Agents]], [[AI LABS - Claude Design Skills for Beautiful Sites]], [[Jay E - The ARMS Framework for a Claude Agentic OS]], [[Ras Mic - How AI Agents and Claude Skills Work]], [[Matt Wolfe - Second Brain Wiki with Journal and CRM]], [[Chase AI - GPT-6 Astra Motion Design in After Effects]], [[AI LABS - Eight GitHub Repos to Upgrade Claude Code]]
+- **More sources:** [[The Coding Sloth - 1000 Hours of Claude Code Lessons]], [[AI LABS - The Unlazy Skill for Lazy Agents]], [[AI LABS - Claude Design Skills for Beautiful Sites]], [[Jay E - The ARMS Framework for a Claude Agentic OS]], [[Ras Mic - How AI Agents and Claude Skills Work]], [[Matt Wolfe - Second Brain Wiki with Journal and CRM]], [[Chase AI - GPT-6 Astra Motion Design in After Effects]], [[AI LABS - Eight GitHub Repos to Upgrade Claude Code]], [[Nate Herk - Stanford STORM Method as a Claude Research Skill]]
 - [[Home]]
