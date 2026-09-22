@@ -5,7 +5,7 @@ updated: 2026-09-15
 
 # Claude Knowledge Bank
 
-A curated bank of the best guidance on using and improving Claude, built from tutorials. **24 sources · 28 concepts · 40 techniques · 17 tools · 17 people.**
+A curated bank of the best guidance on using and improving Claude, built from tutorials. **26 sources · 30 concepts · 42 techniques · 19 tools · 18 people.**
 
 **How to use it**
 - *Add a tutorial:* paste a YouTube link (or several) into Claude Code in this folder. The `ingest-youtube` skill does the rest.
@@ -25,6 +25,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 | Build a second brain or wiki | [[LLM Wiki]] · [[Second Brain Levels]] | [[Bootstrap an LLM Wiki from the Karpathy Gist]] · [[Add a Journal and Personal CRM to a Second Brain]] · [[Second Brain Pain-Point Audit]] |
 | Build an agentic OS | [[Agentic OS]] | [[Build a Level 1 Second Brain]] · [[Build an Agentic OS Dashboard]] |
 | Set up Claude Cowork | [[Claude Cowork]] | [[Set Up Claude Cowork]] |
+| Do trustworthy research with Claude | [[Grounding Research in Real Sources]] · [[Multi-Perspective Research]] | [[Set Up Claude Research Connectors]] · [[Build a STORM Multi-Perspective Research Skill]] |
 
 ## Sources
 
@@ -41,7 +42,9 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 | [[The Coding Sloth - 1000 Hours of Claude Code Lessons]] | [[The Coding Sloth]] | 2026-08-18 | Claude Code features tier list |
 | [[Jack Roberts - Design Systems, Critic Loops and a Design OS]] | [[Jack Roberts]] | 2026-08-12 | design systems, critic loops |
 | [[Sergei Chyrkov - Claude Design Full Tutorial]] | [[Sergei Chyrkov]] | 2026-07-30 | Claude Design, design systems |
+| [[David Stuckler - Claude Connectors and Skills for Academic Research]] | [[David Stuckler]] | 2026-07-22 | research connectors, Consensus, hallucination, SOP skills |
 | [[AI LABS - Types of Claude Loops Explained]] | [[AI LABS]] | 2026-07-09 | loops, verification, multi-agent review |
+| [[Nate Herk - Stanford STORM Method as a Claude Research Skill]] | [[Nate Herk]] | 2026-06-29 | STORM, multi-perspective research, subagents, verification |
 | [[Chase AI - The Agentic OS Setup for Claude Code]] | [[Chase AI]] | 2026-06-25 | agentic OS, skills audit, vault structure |
 | [[AI LABS - Design Skills from Landing Pages to Mobile Apps]] | [[AI LABS]] | 2026-06-23 | design skills, product and mobile UI |
 | [[Nate Herk - Every Level of a Claude Second Brain]] | [[Nate Herk]] | 2026-06-17 | second brain, memory, retrieval |
@@ -63,6 +66,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 - [[Plan Before Executing]]: plan mode, clarifying questions, and planning with a stronger model than the one that implements
 - [[Verification Before Done]]: give Claude a way to check its own work, and decide who judges when it's done
 - [[Choosing a Claude Model]]: model tiers, when to escalate, and routing tasks by difficulty
+- [[Grounding Research in Real Sources]]: pull from real databases and verify every citation, so Claude stops inventing references
 
 **Skills**
 - [[Agent Skills]]: what skills are, progressive disclosure, and skills instead of a new agent per job
@@ -70,6 +74,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 
 **Agents, loops and automation**
 - [[Subagents and Agent Teams]]: isolated workers vs communicating peers, orchestrators, parallel dispatch
+- [[Multi-Perspective Research]]: run a topic through several expert lenses (Stanford's STORM) so disagreement surfaces the blind spots
 - [[Loop Engineering]]: loop types, and when to loop vs keep a human judging
 - [[Routines and Scheduled Tasks]]: every way to keep Claude working without you
 - [[Permissions and Approval Gates]]: allow/deny rules, drafts-only rules, human approval for irreversible actions
@@ -112,6 +117,8 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 | [[Skill Improvement Loop]] | Skills that improve after every failure and prove they earn their tokens | Skills |
 | [[Build a Reference-Rich Skill]] | A SKILL.md router to reference files and proven scripts | Skills |
 | [[Grill Me Interview Skill]] | An interview that pulls knowledge out of your head | Skills |
+| [[Build a STORM Multi-Perspective Research Skill]] | A five-lens research skill with contradiction mapping and citation verification | Research |
+| [[Set Up Claude Research Connectors]] | Research connectors that ground citations in real, clickable sources | Research |
 | [[Tests-First Goal Loop]] | An unattended /goal run gated on tests | Loops |
 | [[Multi-Agent Review and Scoring Loops]] | Critic panels, persona reviews, score-maximising loops | Loops |
 | [[Schedule Recurring Claude Tasks]] | A skill that runs on a schedule | Automation |
@@ -142,15 +149,15 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 
 ## Tools
 
-- **Anthropic:** [[Claude Code]] · [[Claude Cowork]] · [[Claude Design]] · [[Claude Managed Agents]] · [[Claude in Chrome]]
+- **Anthropic:** [[Claude Code]] · [[Claude Cowork]] · [[Claude Design]] · [[Claude Managed Agents]] · [[Claude in Chrome]] · [[Claude Deep Research]]
 - **Other agent harnesses:** [[OpenAI Codex]] · [[Hermes Agent]] · [[OpenClaw]]
 - **Skills:** [[Unlazy]] · [[Scrollcraft]]
 - **Design and media:** [[shadcn]] · [[Higgsfield]]
-- **Memory, retrieval and sync:** [[Obsidian]] · [[Qdrant]] · [[LightRAG]] · [[GBrain]] · [[Syncthing]]
+- **Research and retrieval:** [[Consensus]] · [[Obsidian]] · [[Qdrant]] · [[LightRAG]] · [[GBrain]] · [[Syncthing]]
 
 ## People
 
-- **Creators:** [[AI LABS]] · [[Chase AI]] · [[Jack Roberts]] · [[Jay E]] · [[Matt Wolfe]] · [[Nate Herk]] · [[Ras Mic]] · [[Sergei Chyrkov]] · [[Simon Pittman]] · [[The Coding Sloth]]
+- **Creators:** [[AI LABS]] · [[Chase AI]] · [[David Stuckler]] · [[Jack Roberts]] · [[Jay E]] · [[Matt Wolfe]] · [[Nate Herk]] · [[Ras Mic]] · [[Sergei Chyrkov]] · [[Simon Pittman]] · [[The Coding Sloth]]
 - **Referenced:** [[Andrej Karpathy]] · [[Barry Zhang]] · [[Garry Tan]] · [[Greg Isenberg]] · [[Leon Lin]] · [[Mahesh Murag]] · [[Matt Pocock]]
 
 ---

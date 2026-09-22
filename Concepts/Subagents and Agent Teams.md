@@ -1,7 +1,7 @@
 ---
 type: concept
 aliases: ["Subagents", "Sub-agents", "Agent Teams", "Multi-Agent Coordination", "Coordinator and Specialists"]
-sources: ["[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[AI LABS - Types of Claude Loops Explained]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[Anthropic - What Is Claude Managed Agents]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]"]
+sources: ["[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[AI LABS - Types of Claude Loops Explained]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[Anthropic - What Is Claude Managed Agents]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]", "[[Nate Herk - Stanford STORM Method as a Claude Research Skill]]"]
 tags: [topic/subagents, topic/agents, topic/claude-code, topic/context, topic/models, topic/loops, topic/managed-agents]
 ---
 
@@ -92,6 +92,11 @@ The vault's reading of these sources: a hub suits work where one agent must reme
   - **Order.** Start with one agent and build its skills, then add a subagent so the main agent manages others ([15:28](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=928s)–[15:38](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=938s)). His analogy is founding a company with ten staff when you have never managed anyone ([15:40](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=940s)–[15:47](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=947s)).
   - **His path.** One agent did everything. Once his sponsor workflows were defined, a marketing subagent took that work with its own skills and context. He now runs five subagents, including marketing, business and personal ([25:48](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=1548s)–[26:32](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=1592s)).
   - **Ready-made systems.** He liked Paperclip, a ready-made multi-agent setup, but thinks most people would get more done building their own ([14:48](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=888s)–[14:59](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=899s)). See [[Agentic OS]] and [[Second Brain Levels]].
+- **[[Nate Herk - Stanford STORM Method as a Claude Research Skill]]** gives the clearest plain-language version of the subagent/team split, and a working example:
+  - **Subagents work for the main session and can't talk to each other.** The session you talk to is the lead; its five research lenses report back to it but not to one another ([08:34](https://www.youtube.com/watch?v=Tj3018n5MVg&t=514s)–[08:55](https://www.youtube.com/watch?v=Tj3018n5MVg&t=535s)). You can click a subagent and see the exact prompt the main session sent it ([08:15](https://www.youtube.com/watch?v=Tj3018n5MVg&t=495s)).
+  - **Agent teams can talk to each other and debate.** He spins up teams/councils that message the main session *and* each other, and has them argue until they reach consensus ([08:57](https://www.youtube.com/watch?v=Tj3018n5MVg&t=537s)–[09:19](https://www.youtube.com/watch?v=Tj3018n5MVg&t=559s)). This restates his 32-Tricks framing; the docs now allow named subagents to message too (Beyond the source).
+  - **Cost.** Agent teams are "much more expensive" than subagents ([09:19](https://www.youtube.com/watch?v=Tj3018n5MVg&t=559s)). His five lenses ran on Opus 4.8 but could run on Haiku or Sonnet ([09:34](https://www.youtube.com/watch?v=Tj3018n5MVg&t=574s)). See [[Route Tasks to the Right Claude Model]].
+  - **When to fan out fixed vs many.** Against Claude Code's Deep Research (100+ agents, rate-limited), his fixed five-persona subagent pipeline was faster and cheaper ([04:04](https://www.youtube.com/watch?v=Tj3018n5MVg&t=244s)–[04:30](https://www.youtube.com/watch?v=Tj3018n5MVg&t=270s)). See [[Claude Deep Research]] and [[Multi-Perspective Research]].
 
 ## Where sources disagree
 
@@ -159,7 +164,7 @@ The vault's reading of these sources: a hub suits work where one agent must reme
 
 ## Related
 
-- **Concepts:** [[Context Window Management]] · [[Agent Laziness]] · [[Loop Engineering]] · [[Verification Before Done]] · [[Choosing a Claude Model]] · [[Agent Skills]] · [[Agentic OS]] · [[Permissions and Approval Gates]] · [[Agent Memory Patterns]] · [[Second Brain Levels]]
-- **Techniques:** [[Parallel Sessions with Git Worktrees]] · [[Route Tasks to the Right Claude Model]] · [[Multi-Agent Review and Scoring Loops]] · [[Evidence-Gated Completion Ledger]] · [[Context Hygiene Routine]] · [[Build an Event-Triggered Managed Agent]]
-- **Tools:** [[Claude Code]] · [[Claude Managed Agents]] · [[Unlazy]] · [[OpenClaw]]
+- **Concepts:** [[Context Window Management]] · [[Agent Laziness]] · [[Loop Engineering]] · [[Verification Before Done]] · [[Choosing a Claude Model]] · [[Agent Skills]] · [[Agentic OS]] · [[Permissions and Approval Gates]] · [[Agent Memory Patterns]] · [[Second Brain Levels]] · [[Multi-Perspective Research]]
+- **Techniques:** [[Parallel Sessions with Git Worktrees]] · [[Route Tasks to the Right Claude Model]] · [[Multi-Agent Review and Scoring Loops]] · [[Evidence-Gated Completion Ledger]] · [[Context Hygiene Routine]] · [[Build an Event-Triggered Managed Agent]] · [[Build a STORM Multi-Perspective Research Skill]]
+- **Tools:** [[Claude Code]] · [[Claude Managed Agents]] · [[Unlazy]] · [[OpenClaw]] · [[Claude Deep Research]]
 - **People:** [[Nate Herk]] · [[The Coding Sloth]] · [[AI LABS]] · [[Ras Mic]] · [[Andrej Karpathy]]
