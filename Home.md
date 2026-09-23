@@ -5,7 +5,7 @@ updated: 2026-09-15
 
 # Claude Knowledge Bank
 
-A curated bank of the best guidance on using and improving Claude, built from tutorials. **26 sources · 30 concepts · 42 techniques · 19 tools · 18 people.**
+A curated bank of the best guidance on using and improving Claude, built from tutorials. **27 sources · 30 concepts · 44 techniques · 20 tools · 18 people.**
 
 **How to use it**
 - *Add a tutorial:* paste a YouTube link (or several) into Claude Code in this folder. The `ingest-youtube` skill does the rest.
@@ -21,7 +21,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 | Package your workflows | [[Agent Skills]] · [[Build vs Install Third-Party Skills]] | [[Workflow Audit into Skills]] · [[Build a Skill from a Successful Run]] · [[Audit Skill Descriptions and Triggers]] |
 | Run Claude while you're away | [[Routines and Scheduled Tasks]] · [[Loop Engineering]] · [[Permissions and Approval Gates]] | [[Schedule Recurring Claude Tasks]] · [[Configure Safe Autonomy Permissions]] |
 | Design sites that don't look AI-made | [[Escaping the Default AI Design Look]] · [[Design Systems for Claude]] | [[Create and Reuse a Claude Design System]] · [[Build a Distinctive Site with Design Skills]] · [[Benchmark-Driven Design Critique]] |
-| Make images, video and marketing assets | [[Generating Images and Video with Claude]] | [[Build a Brand-Aware Marketing Project]] · [[Generate On-Brand Images from Claude Code]] · [[Storyboard-First AI Video and Motion Graphics]] |
+| Make images, video and marketing assets | [[Generating Images and Video with Claude]] | [[Build a Brand-Aware Marketing Project]] · [[Generate On-Brand Images from Claude Code]] · [[Storyboard-First AI Video and Motion Graphics]] · [[Render a Video Entirely in Code with Claude Code]] · [[Auto-Edit Footage from Your Editing History]] |
 | Build a second brain or wiki | [[LLM Wiki]] · [[Second Brain Levels]] | [[Bootstrap an LLM Wiki from the Karpathy Gist]] · [[Add a Journal and Personal CRM to a Second Brain]] · [[Second Brain Pain-Point Audit]] |
 | Build an agentic OS | [[Agentic OS]] | [[Build a Level 1 Second Brain]] · [[Build an Agentic OS Dashboard]] |
 | Set up Claude Cowork | [[Claude Cowork]] | [[Set Up Claude Cowork]] |
@@ -31,6 +31,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 
 | Source | Creator | Published | Topics |
 |---|---|---|---|
+| [[AzorAhai1TK - Opus 5.5 One-Shot Programmatic Video]] | u/AzorAhai1TK | 2026-09-22 | Reddit: code-rendered video with Opus 5.5, AI footage editing, usage cost |
 | [[AI LABS - Eight GitHub Repos to Upgrade Claude Code]] | [[AI LABS]] | 2026-09-14 | verification, token trimming, skill evals, design registry |
 | [[Chase AI - GPT-6 Astra Motion Design in After Effects]] | [[Chase AI]] | 2026-09-14 | motion graphics, storyboards (mostly non-Claude stack) |
 | [[Nate Herk - Build Skills Instead of Agents]] | [[Nate Herk]] | 2026-09-13 | skills, descriptions, verification |
@@ -135,6 +136,8 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 | [[Benchmark-Driven Design Critique]] | A measured gap report and critic loop against a benchmark design | Design |
 | [[Build Product UI from a Component Registry]] | Consistent app, dashboard and mobile UI from registry components | Design |
 | [[Generate On-Brand Images from Claude Code]] | An image-model skill with brand references and contact-sheet selection | Media |
+| [[Render a Video Entirely in Code with Claude Code]] | A one-prompt video drawn, voiced and rendered in Python with no media model | Media |
+| [[Auto-Edit Footage from Your Editing History]] | Style-matched rough cuts and themed shorts from past project files and transcripts | Media |
 | [[Storyboard-First AI Video and Motion Graphics]] | Storyboard → agent-written build prompt → targeted revisions | Media |
 | [[Build a Brand-Aware Marketing Project]] | A brand-context project that produces sites, ads, reels and a creative tracker | Marketing |
 | [[Second Brain Pain-Point Audit]] | A per-folder diagnosis of which brain level each part needs | Second brain |
@@ -152,7 +155,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 - **Anthropic:** [[Claude Code]] · [[Claude Cowork]] · [[Claude Design]] · [[Claude Managed Agents]] · [[Claude in Chrome]] · [[Claude Deep Research]]
 - **Other agent harnesses:** [[OpenAI Codex]] · [[Hermes Agent]] · [[OpenClaw]]
 - **Skills:** [[Unlazy]] · [[Scrollcraft]]
-- **Design and media:** [[shadcn]] · [[Higgsfield]]
+- **Design and media:** [[shadcn]] · [[Higgsfield]] · [[FFmpeg]]
 - **Research and retrieval:** [[Consensus]] · [[Obsidian]] · [[Qdrant]] · [[LightRAG]] · [[GBrain]] · [[Syncthing]]
 
 ## People
