@@ -1,7 +1,7 @@
 ---
 type: concept
 aliases: ["Claude Models", "Model Selection"]
-sources: ["[[Knowing More - Every Claude Model Explained]]", "[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[Simon Pittman - Set Up Claude Cowork]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]", "[[Sergei Chyrkov - Claude Design Full Tutorial]]"]
+sources: ["[[Knowing More - Every Claude Model Explained]]", "[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[Simon Pittman - Set Up Claude Cowork]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]", "[[Sergei Chyrkov - Claude Design Full Tutorial]]", "[[AzorAhai1TK - Opus 5.5 One-Shot Programmatic Video]]"]
 tags: [topic/models, topic/claude-code, topic/cowork, topic/subagents, topic/context, topic/planning, topic/design]
 ---
 
@@ -144,6 +144,7 @@ The token-use complaint matches the budget worries in two other sources.
 - [[AI LABS - The Unlazy Skill for Lazy Agents]]: route subtasks by difficulty in large orchestrated runs ([12:15](https://www.youtube.com/watch?v=c47uqR7XB_c&t=735s)). Laziness affects every model tier ([00:48](https://www.youtube.com/watch?v=c47uqR7XB_c&t=48s)). Claude Code's `/goal` uses a smaller model as its judge ([03:35](https://www.youtube.com/watch?v=c47uqR7XB_c&t=215s), [03:58](https://www.youtube.com/watch?v=c47uqR7XB_c&t=238s)).
 - [[Ras Mic - How AI Agents and Claude Skills Work]], on [[Greg Isenberg]]'s podcast: the models are good enough that context and harness now matter more than which model you pick ([00:48](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=48s), [27:21](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=1641s)). Keep context lean so whichever model you use stays sharp ([31:04](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=1864s)–[31:29](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=1889s)).
 - [[Sergei Chyrkov - Claude Design Full Tutorial]]: designs on Opus 5 in Claude Design, then builds on Sonnet 5 in Claude Code to save tokens ([10:59](https://www.youtube.com/watch?v=T96O8dTzi2Q&t=659s)).
+- [[AzorAhai1TK - Opus 5.5 One-Shot Programmatic Video]]: a launch-day data point for Opus 5.5 at Extra-High (`xhigh`) effort in Claude Code. One prompt produced a finished, code-rendered one-minute video in about 45 minutes, using about 4% of a $20 plan's weekly limit ([post](https://www.reddit.com/r/ClaudeAI/comments/1wnh4fn/)). A commenter's heavier variant took over 3 hours and about 14% ([comment](https://www.reddit.com/r/ClaudeAI/comments/1wnh4fn/comment/pbgoj3r/)). Long agentic runs at high effort are affordable on small plans, but the cost varies a lot with the brief. Launch-day limits were also raised (Beyond the source).
 
 ## Where sources disagree
 
@@ -195,6 +196,12 @@ The token-use complaint matches the budget worries in two other sources.
 - **Opus 5** launched 2026-07-24. It is the default on Max and the strongest model on Pro. It has adjustable effort and a faster, pricier fast mode. Source: https://www.anthropic.com/news/claude-opus-5
 - **Fable 5.1 and Mythos 5.1** launched on 2026-09-01 (date per https://www.macrumors.com/2026/09/01/anthropic-claude-fable-5-1/). Fable 5.1 is generally available. Mythos 5.1 goes through trusted-access programmes for cyber defence and life sciences. Source: https://www.anthropic.com/claude-fable-and-mythos-5-1
   - Anthropic's model-choice page describes Mythos 5.1 as available to Project Glasswing participants only. Both descriptions are recorded here. Source: https://platform.claude.com/docs/en/about-claude/models/choosing-a-model
+- **Opus 5.5** launched 2026-09-22.
+  - Its default effort is `medium`, and at that setting Anthropic reports it beating Opus 5 at max effort on Terminal-Bench 4.0 for about a fifth of the cost.
+  - Its prices are lower than Opus 5's, and output is more than 30% faster.
+  - The launch raised five-hour usage limits on Pro, Max, Team and seat-based Enterprise plans, with a one-off rate-limit reset.
+  - This supports the guidance to try a lower effort before a bigger model.
+  - Source: https://www.anthropic.com/news/claude-opus-5-5
 - **Fable costs usage credits on some plans.** Pro plans and Standard seats on Team and Enterprise need usage credits. Max plans and Premium seats can spend up to 50% of their weekly limit on Fable at no extra cost, though the total limit stays the same. On the API, Fable is billed at standard API rates. This confirms what the Coding Sloth said at [07:58](https://www.youtube.com/watch?v=YAsxyoTWFDA&t=478s) for Pro. Source: https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan
 
 ### Anthropic's current guidance
@@ -238,4 +245,5 @@ The token-use complaint matches the budget worries in two other sources.
 - Ideas: [[Plan Before Executing]] · [[Subagents and Agent Teams]] · [[Context Window Management]] · [[Agent Laziness]] · [[Agent Skills]] · [[Loop Engineering]]
 - Tools: [[Claude Code]] · [[Claude Cowork]] · [[Claude Managed Agents]] · [[Unlazy]] · [[Claude Design]]
 - Design handoff: [[Create and Reuse a Claude Design System]] · [[Sergei Chyrkov - Claude Design Full Tutorial]]
+- Sources: [[AzorAhai1TK - Opus 5.5 One-Shot Programmatic Video]]
 - People: [[Nate Herk]] · [[The Coding Sloth]] · [[Simon Pittman]] · [[Ras Mic]] · [[AI LABS]] · [[Sergei Chyrkov]]
