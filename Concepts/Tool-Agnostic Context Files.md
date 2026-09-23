@@ -1,7 +1,7 @@
 ---
 type: concept
 aliases: ["Portable Second Brain", "AGENTS.md and CLAUDE.md", "Portable Skills"]
-sources: ["[[Nate Herk - Every Level of a Claude Second Brain]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[AI LABS - Claude Design Skills for Beautiful Sites]]", "[[Jay E - The ARMS Framework for a Claude Agentic OS]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]", "[[Anthropic - What Is Claude Managed Agents]]", "[[Nate Herk - Build Skills Instead of Agents]]"]
+sources: ["[[Nate Herk - Every Level of a Claude Second Brain]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[AI LABS - Claude Design Skills for Beautiful Sites]]", "[[Jay E - The ARMS Framework for a Claude Agentic OS]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]", "[[Anthropic - What Is Claude Managed Agents]]", "[[Nate Herk - Build Skills Instead of Agents]]", "[[LYKN - Website Overview]]"]
 tags: [topic/portability, topic/second-brain, topic/claude-code, topic/agents, topic/skills, topic/context, topic/managed-agents]
 ---
 
@@ -131,6 +131,7 @@ All from [[Jay E - The ARMS Framework for a Claude Agentic OS]]:
 - [[Nate Herk - Every Level of a Claude Second Brain]]: the brain is only files and folders, so any harness can read it ([01:50](https://www.youtube.com/watch?v=DTCyvo6cC54&t=110s)).
 - [[Anthropic - What Is Claude Managed Agents]]: the demo agent reads from and writes to a memory store held by the platform ([02:15](https://www.youtube.com/watch?v=NLWiIj47IdI&t=135s)). It checks last week's findings before a run and stores what changed afterwards ([02:19](https://www.youtube.com/watch?v=NLWiIj47IdI&t=139s)–[02:21](https://www.youtube.com/watch?v=NLWiIj47IdI&t=141s)).
 - **How they fit** (vault synthesis): store memories are path-addressed text, so they can join a file-based brain, but only through an export step (see Beyond the source).
+- [[LYKN - Website Overview]]: a third option, a hosted personal vault that other vendors' tools connect to over MCP, OAuth or REST. ChatGPT, Claude and Cursor then share one context, and each connection can be revoked ([terms](https://lykn.io/terms)). It's portable across tools but held on someone else's platform, and it offers data export. See [[LYKN]].
 
 ## Perspectives from sources
 
@@ -217,6 +218,7 @@ All from [[Jay E - The ARMS Framework for a Claude Agentic OS]]:
 - [[Always-On Brain OS]] and [[Second Brain Levels]]
 - [[Agentic OS]] and [[Routines and Scheduled Tasks]]
 - [[Context vs Connections]]
+- [[LYKN]], a commercial cross-tool memory layer
 - [[Context Window Management]]
 - [[Claude Code]], [[OpenAI Codex]], [[Hermes Agent]], [[GBrain]], [[Obsidian]]
 - [[Unlazy]], [[Claude Design]], [[Syncthing]]
