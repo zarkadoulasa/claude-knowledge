@@ -1,14 +1,14 @@
 ---
 type: index
-updated: 2026-09-15
+updated: 2026-09-23
 ---
 
 # Claude Knowledge Bank
 
-A curated bank of the best guidance on using and improving Claude, built from tutorials. **26 sources · 30 concepts · 42 techniques · 19 tools · 18 people.**
+A curated bank of the best guidance on using and improving Claude, built from tutorials. **27 sources · 31 concepts · 44 techniques · 20 tools · 19 people.**
 
 **How to use it**
-- *Add a tutorial:* paste a YouTube link (or several) into Claude Code in this folder. The `ingest-youtube` skill does the rest.
+- *Add a tutorial:* paste a YouTube link (or several) into Claude Code in this folder. The `ingest-youtube` skill does the rest. Reddit posts and GitHub repos can be ingested too; Reddit blocks automated fetching, so paste the post text.
 - *Ask a question:* for example, "How do I stop Claude getting lazy on long tasks?" Claude starts here, then reads the matching Concepts and Techniques.
 - *Build something:* for example, "Set up [[Evidence-Gated Completion Ledger]] in ~/projects/app."
 
@@ -19,6 +19,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 | Get better results from Claude Code day to day | [[Context Window Management]] · [[Plan Before Executing]] · [[Verification Before Done]] | [[Context Hygiene Routine]] · [[Plan-First Workflow]] · [[Build Verification into Every Task]] |
 | Stop agents cutting corners on long tasks | [[Agent Laziness]] · [[Verification Before Done]] | [[Evidence-Gated Completion Ledger]] · [[Tests-First Goal Loop]] |
 | Package your workflows | [[Agent Skills]] · [[Build vs Install Third-Party Skills]] | [[Workflow Audit into Skills]] · [[Build a Skill from a Successful Run]] · [[Audit Skill Descriptions and Triggers]] |
+| Run a standing team of agents | [[Persistent Agent Organizations]] · [[Subagents and Agent Teams]] | [[Write Role Charters for a Multi-Agent Team]] · [[Run a Coordinator-Led Agent Team in Orgtree]] |
 | Run Claude while you're away | [[Routines and Scheduled Tasks]] · [[Loop Engineering]] · [[Permissions and Approval Gates]] | [[Schedule Recurring Claude Tasks]] · [[Configure Safe Autonomy Permissions]] |
 | Design sites that don't look AI-made | [[Escaping the Default AI Design Look]] · [[Design Systems for Claude]] | [[Create and Reuse a Claude Design System]] · [[Build a Distinctive Site with Design Skills]] · [[Benchmark-Driven Design Critique]] |
 | Make images, video and marketing assets | [[Generating Images and Video with Claude]] | [[Build a Brand-Aware Marketing Project]] · [[Generate On-Brand Images from Claude Code]] · [[Storyboard-First AI Video and Motion Graphics]] |
@@ -31,6 +32,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 
 | Source | Creator | Published | Topics |
 |---|---|---|---|
+| [[DynaBeast - Orgtree v2 Multi-Agent Orchestrator App]] | [[DynaBeast]] | 2026-09-12 | Reddit post + repo: agent org chart, docket, role charters, multi-account |
 | [[AI LABS - Eight GitHub Repos to Upgrade Claude Code]] | [[AI LABS]] | 2026-09-14 | verification, token trimming, skill evals, design registry |
 | [[Chase AI - GPT-6 Astra Motion Design in After Effects]] | [[Chase AI]] | 2026-09-14 | motion graphics, storyboards (mostly non-Claude stack) |
 | [[Nate Herk - Build Skills Instead of Agents]] | [[Nate Herk]] | 2026-09-13 | skills, descriptions, verification |
@@ -74,6 +76,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 
 **Agents, loops and automation**
 - [[Subagents and Agent Teams]]: isolated workers vs communicating peers, orchestrators, parallel dispatch
+- [[Persistent Agent Organizations]]: a standing tree of long-lived agents with roles, budgets and a shared docket, instead of throwaway helpers
 - [[Multi-Perspective Research]]: run a topic through several expert lenses (Stanford's STORM) so disagreement surfaces the blind spots
 - [[Loop Engineering]]: loop types, and when to loop vs keep a human judging
 - [[Routines and Scheduled Tasks]]: every way to keep Claude working without you
@@ -120,6 +123,8 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 | [[Build a STORM Multi-Perspective Research Skill]] | A five-lens research skill with contradiction mapping and citation verification | Research |
 | [[Set Up Claude Research Connectors]] | Research connectors that ground citations in real, clickable sources | Research |
 | [[Tests-First Goal Loop]] | An unattended /goal run gated on tests | Loops |
+| [[Write Role Charters for a Multi-Agent Team]] | Coordinator, implementer, redteam and curator charters that prevent common team failures | Agents |
+| [[Run a Coordinator-Led Agent Team in Orgtree]] | A persistent Orgtree org with a coordinator, flat workers and a docket | Agents |
 | [[Multi-Agent Review and Scoring Loops]] | Critic panels, persona reviews, score-maximising loops | Loops |
 | [[Schedule Recurring Claude Tasks]] | A skill that runs on a schedule | Automation |
 | [[Sync a Workspace to an Always-On Cloud Agent]] | 24/7 routines on a cloud agent sharing your skills and memory | Automation |
@@ -151,13 +156,14 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 
 - **Anthropic:** [[Claude Code]] · [[Claude Cowork]] · [[Claude Design]] · [[Claude Managed Agents]] · [[Claude in Chrome]] · [[Claude Deep Research]]
 - **Other agent harnesses:** [[OpenAI Codex]] · [[Hermes Agent]] · [[OpenClaw]]
+- **Multi-agent orchestration:** [[Orgtree]]
 - **Skills:** [[Unlazy]] · [[Scrollcraft]]
 - **Design and media:** [[shadcn]] · [[Higgsfield]]
 - **Research and retrieval:** [[Consensus]] · [[Obsidian]] · [[Qdrant]] · [[LightRAG]] · [[GBrain]] · [[Syncthing]]
 
 ## People
 
-- **Creators:** [[AI LABS]] · [[Chase AI]] · [[David Stuckler]] · [[Jack Roberts]] · [[Jay E]] · [[Matt Wolfe]] · [[Nate Herk]] · [[Ras Mic]] · [[Sergei Chyrkov]] · [[Simon Pittman]] · [[The Coding Sloth]]
+- **Creators:** [[AI LABS]] · [[Chase AI]] · [[David Stuckler]] · [[DynaBeast]] · [[Jack Roberts]] · [[Jay E]] · [[Matt Wolfe]] · [[Nate Herk]] · [[Ras Mic]] · [[Sergei Chyrkov]] · [[Simon Pittman]] · [[The Coding Sloth]]
 - **Referenced:** [[Andrej Karpathy]] · [[Barry Zhang]] · [[Garry Tan]] · [[Greg Isenberg]] · [[Leon Lin]] · [[Mahesh Murag]] · [[Matt Pocock]]
 
 ---

@@ -1,7 +1,7 @@
 ---
 type: concept
 aliases: ["Subagents", "Sub-agents", "Agent Teams", "Multi-Agent Coordination", "Coordinator and Specialists"]
-sources: ["[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[AI LABS - Types of Claude Loops Explained]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[Anthropic - What Is Claude Managed Agents]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]", "[[Nate Herk - Stanford STORM Method as a Claude Research Skill]]"]
+sources: ["[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[AI LABS - Types of Claude Loops Explained]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[Anthropic - What Is Claude Managed Agents]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]", "[[Nate Herk - Stanford STORM Method as a Claude Research Skill]]", "[[DynaBeast - Orgtree v2 Multi-Agent Orchestrator App]]"]
 tags: [topic/subagents, topic/agents, topic/claude-code, topic/context, topic/models, topic/loops, topic/managed-agents]
 ---
 
@@ -46,6 +46,7 @@ Nate describes agent teams as subagents that can also talk to each other. Teamma
 | **Coordinator + specialists** | Delegates to three specialists, each with its own context on one shared filesystem, then merges their findings into one summary | [[Anthropic - What Is Claude Managed Agents]] [02:42](https://www.youtube.com/watch?v=NLWiIj47IdI&t=162s)–[02:58](https://www.youtube.com/watch?v=NLWiIj47IdI&t=178s) |
 | **Tree of leaf tasks** | Splits the task into a tree. In orchestrated mode (depth 4+) each leaf gets a fresh subagent, and the parent re-runs the leaf's checks before moving on | [[AI LABS - The Unlazy Skill for Lazy Agents]] [05:49](https://www.youtube.com/watch?v=c47uqR7XB_c&t=349s), [06:56](https://www.youtube.com/watch?v=c47uqR7XB_c&t=416s), [08:35](https://www.youtube.com/watch?v=c47uqR7XB_c&t=515s)–[08:46](https://www.youtube.com/watch?v=c47uqR7XB_c&t=526s) |
 | **Agent team (mesh)** | Peers share a task list and message each other directly | [[Nate Herk - 32 Tricks to Level Up Claude Code]] [14:43](https://www.youtube.com/watch?v=jqoFP9QapXI&t=883s) |
+| **Persistent org tree** | A standing coordinator under you, and long-lived workers flat beneath it that hire, message and track tickets on a shared docket across tasks | [[DynaBeast - Orgtree v2 Multi-Agent Orchestrator App]] [post](https://www.reddit.com/r/claudeskills/comments/1wejev5/orgtree_v2_now_an_app/), [V1 README L135–139](https://github.com/Maurdekye/claude-orgtree/blob/a8199a598f0c62216ed41cf3e1a099d46517f43d/README.md#L135-L139) |
 | **Fan-out workflow** | A dynamic workflow spreads one review across many subagents at once | [[AI LABS - Types of Claude Loops Explained]] [10:01](https://www.youtube.com/watch?v=8wsM0euQOvc&t=601s)–[10:13](https://www.youtube.com/watch?v=8wsM0euQOvc&t=613s) |
 
 The vault's reading of these sources: a hub suits work where one agent must remember earlier rounds, and a mesh suits work where the peers need to argue with each other. [[Multi-Agent Review and Scoring Loops]] builds the orchestrator pattern.
@@ -97,6 +98,11 @@ The vault's reading of these sources: a hub suits work where one agent must reme
   - **Agent teams can talk to each other and debate.** He spins up teams/councils that message the main session *and* each other, and has them argue until they reach consensus ([08:57](https://www.youtube.com/watch?v=Tj3018n5MVg&t=537s)–[09:19](https://www.youtube.com/watch?v=Tj3018n5MVg&t=559s)). This restates his 32-Tricks framing; the docs now allow named subagents to message too (Beyond the source).
   - **Cost.** Agent teams are "much more expensive" than subagents ([09:19](https://www.youtube.com/watch?v=Tj3018n5MVg&t=559s)). His five lenses ran on Opus 4.8 but could run on Haiku or Sonnet ([09:34](https://www.youtube.com/watch?v=Tj3018n5MVg&t=574s)). See [[Route Tasks to the Right Claude Model]].
   - **When to fan out fixed vs many.** Against Claude Code's Deep Research (100+ agents, rate-limited), his fixed five-persona subagent pipeline was faster and cheaper ([04:04](https://www.youtube.com/watch?v=Tj3018n5MVg&t=244s)–[04:30](https://www.youtube.com/watch?v=Tj3018n5MVg&t=270s)). See [[Claude Deep Research]] and [[Multi-Perspective Research]].
+- **[[DynaBeast - Orgtree v2 Multi-Agent Orchestrator App]]** makes the team permanent with [[Orgtree]]:
+  - **Standing agents.** Agents are long-lived and addressable in a tree of authority, rather than helpers that end with the task. They hire their own reports, message down to any depth, up one hop or sideways, and hold seats from a credit budget ([V1 README L40–59](https://github.com/Maurdekye/claude-orgtree/blob/a8199a598f0c62216ed41cf3e1a099d46517f43d/README.md#L40-L59)).
+  - **A shared docket.** Agents track their own work as tickets, so two dozen agents stay legible ([post](https://www.reddit.com/r/claudeskills/comments/1wejev5/orgtree_v2_now_an_app/)).
+  - **Coordinator stack.** One coordinator directly under you with workers flat beneath it, which is the hub pattern made permanent ([V1 README L135–139](https://github.com/Maurdekye/claude-orgtree/blob/a8199a598f0c62216ed41cf3e1a099d46517f43d/README.md#L135-L139)).
+  - **Charters.** Its bundled role charters are a practical rulebook for teams. See [[Write Role Charters for a Multi-Agent Team]] and [[Persistent Agent Organizations]].
 
 ## Where sources disagree
 
@@ -119,6 +125,10 @@ The vault's reading of these sources: a hub suits work where one agent must reme
   - Nate lists subagents as an intermediate trick ([04:53](https://www.youtube.com/watch?v=jqoFP9QapXI&t=293s)), and the Coding Sloth rates them S tier on big plans ([20:26](https://www.youtube.com/watch?v=YAsxyoTWFDA&t=1226s)).
   - Ras Mic says a subagent should come only after a workflow exists ([26:01](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=1561s)–[26:15](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=1575s)).
   - They mean different things: Nate and the Sloth talk about delegating within one task, Ras Mic about permanent domain agents.
+- **Ready-made team system or your own?**
+  - Ras Mic liked Paperclip but would build his own ([14:48](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=888s)).
+  - Orgtree's author pitches his app as a free-form sandbox, unlike Paperclip's opinionated CEO framing ([comment](https://www.reddit.com/r/claudeskills/comments/1wejev5/comment/p9ia1qk/)).
+  - Both agree the structure should follow your workflows. They differ on whether a ready-made tool gets in the way.
 
 ## Beyond the source
 
@@ -164,7 +174,7 @@ The vault's reading of these sources: a hub suits work where one agent must reme
 
 ## Related
 
-- **Concepts:** [[Context Window Management]] · [[Agent Laziness]] · [[Loop Engineering]] · [[Verification Before Done]] · [[Choosing a Claude Model]] · [[Agent Skills]] · [[Agentic OS]] · [[Permissions and Approval Gates]] · [[Agent Memory Patterns]] · [[Second Brain Levels]] · [[Multi-Perspective Research]]
-- **Techniques:** [[Parallel Sessions with Git Worktrees]] · [[Route Tasks to the Right Claude Model]] · [[Multi-Agent Review and Scoring Loops]] · [[Evidence-Gated Completion Ledger]] · [[Context Hygiene Routine]] · [[Build an Event-Triggered Managed Agent]] · [[Build a STORM Multi-Perspective Research Skill]]
-- **Tools:** [[Claude Code]] · [[Claude Managed Agents]] · [[Unlazy]] · [[OpenClaw]] · [[Claude Deep Research]]
-- **People:** [[Nate Herk]] · [[The Coding Sloth]] · [[AI LABS]] · [[Ras Mic]] · [[Andrej Karpathy]]
+- **Concepts:** [[Persistent Agent Organizations]] · [[Context Window Management]] · [[Agent Laziness]] · [[Loop Engineering]] · [[Verification Before Done]] · [[Choosing a Claude Model]] · [[Agent Skills]] · [[Agentic OS]] · [[Permissions and Approval Gates]] · [[Agent Memory Patterns]] · [[Second Brain Levels]] · [[Multi-Perspective Research]]
+- **Techniques:** [[Write Role Charters for a Multi-Agent Team]] · [[Run a Coordinator-Led Agent Team in Orgtree]] · [[Parallel Sessions with Git Worktrees]] · [[Route Tasks to the Right Claude Model]] · [[Multi-Agent Review and Scoring Loops]] · [[Evidence-Gated Completion Ledger]] · [[Context Hygiene Routine]] · [[Build an Event-Triggered Managed Agent]] · [[Build a STORM Multi-Perspective Research Skill]]
+- **Tools:** [[Claude Code]] · [[Claude Managed Agents]] · [[Unlazy]] · [[OpenClaw]] · [[Claude Deep Research]] · [[Orgtree]]
+- **People:** [[Nate Herk]] · [[The Coding Sloth]] · [[AI LABS]] · [[Ras Mic]] · [[Andrej Karpathy]] · [[DynaBeast]]
