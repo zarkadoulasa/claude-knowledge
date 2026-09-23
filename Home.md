@@ -5,7 +5,7 @@ updated: 2026-09-23
 
 # Claude Knowledge Bank
 
-A curated bank of the best guidance on using and improving Claude, built from tutorials. **28 sources · 31 concepts · 46 techniques · 21 tools · 19 people.**
+A curated bank of the best guidance on using and improving Claude, built from tutorials. **29 sources · 31 concepts · 46 techniques · 22 tools · 19 people.**
 
 **How to use it**
 - *Add a tutorial:* paste a YouTube link (or several) into Claude Code in this folder. The `ingest-youtube` skill does the rest. Reddit posts and GitHub repos can be ingested too; Reddit blocks automated fetching, so paste the post text.
@@ -37,6 +37,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 | [[AI LABS - Eight GitHub Repos to Upgrade Claude Code]] | [[AI LABS]] | 2026-09-14 | verification, token trimming, skill evals, design registry |
 | [[Chase AI - GPT-6 Astra Motion Design in After Effects]] | [[Chase AI]] | 2026-09-14 | motion graphics, storyboards (mostly non-Claude stack) |
 | [[Nate Herk - Build Skills Instead of Agents]] | [[Nate Herk]] | 2026-09-13 | skills, descriptions, verification |
+| [[LYKN - Website Overview]] | Omnia Technologies | 2026-08-26 | Product site (light ingest): cross-tool memory over MCP, scheduled templates, desktop context |
 | [[AI LABS - Claude Design Skills for Beautiful Sites]] | [[AI LABS]] | 2026-08-24 | design skills, Claude Design |
 | [[Nate Herk - The Scrollcraft Website Design Skill]] | [[Nate Herk]] | 2026-08-22 | scroll-driven sites, design skill |
 | [[Jay E - The ARMS Framework for a Claude Agentic OS]] | [[Jay E]] | 2026-08-21 | agentic OS, skills, routines, memory |
@@ -160,6 +161,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 - **Anthropic:** [[Claude Code]] · [[Claude Cowork]] · [[Claude Design]] · [[Claude Managed Agents]] · [[Claude in Chrome]] · [[Claude Deep Research]]
 - **Other agent harnesses:** [[OpenAI Codex]] · [[Hermes Agent]] · [[OpenClaw]]
 - **Multi-agent orchestration:** [[Orgtree]]
+- **Cross-tool memory and assistants:** [[LYKN]]
 - **Skills:** [[Unlazy]] · [[Scrollcraft]]
 - **Design and media:** [[shadcn]] · [[Higgsfield]] · [[FFmpeg]]
 - **Research and retrieval:** [[Consensus]] · [[Obsidian]] · [[Qdrant]] · [[LightRAG]] · [[GBrain]] · [[Syncthing]]
