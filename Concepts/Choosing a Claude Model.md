@@ -1,8 +1,8 @@
 ---
 type: concept
 aliases: ["Claude Models", "Model Selection"]
-sources: ["[[Knowing More - Every Claude Model Explained]]", "[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[Simon Pittman - Set Up Claude Cowork]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]", "[[Sergei Chyrkov - Claude Design Full Tutorial]]", "[[AzorAhai1TK - Opus 5.5 One-Shot Programmatic Video]]"]
-tags: [topic/models, topic/claude-code, topic/cowork, topic/subagents, topic/context, topic/planning, topic/design]
+sources: ["[[Knowing More - Every Claude Model Explained]]", "[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[Simon Pittman - Set Up Claude Cowork]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]", "[[Sergei Chyrkov - Claude Design Full Tutorial]]", "[[AzorAhai1TK - Opus 5.5 One-Shot Programmatic Video]]", "[[Jay E - Pairing Jev with Claude Code]]"]
+tags: [topic/models, topic/claude-code, topic/cowork, topic/subagents, topic/context, topic/planning, topic/design, topic/automation]
 ---
 
 # Choosing a Claude Model
@@ -57,6 +57,7 @@ Four sources split a single job across models, and each splits it along a differ
 - **By difficulty, per [[AI LABS - The Unlazy Skill for Lazy Agents]].** In orchestrated mode (depth 4+), Unlazy hands each leaf task to its own subagent ([05:49](https://www.youtube.com/watch?v=c47uqR7XB_c&t=349s), [06:56](https://www.youtube.com/watch?v=c47uqR7XB_c&t=416s)).
   - At that scale AI LABS suggest adding a model-router skill ([12:15](https://www.youtube.com/watch?v=c47uqR7XB_c&t=735s)). It sends mechanical subtasks to a cheaper model and the hard parts to a strong one, so a long run doesn't use up your limits early ([12:19](https://www.youtube.com/watch?v=c47uqR7XB_c&t=739s)–[12:27](https://www.youtube.com/watch?v=c47uqR7XB_c&t=747s)).
   - They don't name a specific router.
+- **By an automated router, per [[Jay E - Pairing Jev with Claude Code]].** He fills the gap AI LABS leave open by naming a router: [[Jev]], a fast [[System 1 and System 2 AI Models|System 1]] decision model, picks the cheapest adequate Claude model per task instead of leaving the choice to you ([05:05](https://www.youtube.com/watch?v=tTnUcSj-QPA&t=305s)). He wires it into Claude Code behind a `/jev on` toggle skill ([06:26](https://www.youtube.com/watch?v=tTnUcSj-QPA&t=386s)); over a 12-prompt test he reports about 70% cost savings because 9 of 12 tasks never needed the top model ([05:48](https://www.youtube.com/watch?v=tTnUcSj-QPA&t=348s)) — a vendor-adjacent, self-run figure you should validate on your own work. See [[Add a Jev Decision Layer to Claude Code]].
 - **By surface, per [[Sergei Chyrkov - Claude Design Full Tutorial]].** Design on the expensive surface, then build on the cheap one.
   - He designs in Claude Design on Opus 5 ([02:19](https://www.youtube.com/watch?v=T96O8dTzi2Q&t=139s)) and hits his usage limit mid-session ([07:52](https://www.youtube.com/watch?v=T96O8dTzi2Q&t=472s)).
   - Claude Design uses a lot of tokens, so he stops iterating there once the layout looks right ([09:52](https://www.youtube.com/watch?v=T96O8dTzi2Q&t=592s)).
@@ -144,6 +145,7 @@ The token-use complaint matches the budget worries in two other sources.
 - [[AI LABS - The Unlazy Skill for Lazy Agents]]: route subtasks by difficulty in large orchestrated runs ([12:15](https://www.youtube.com/watch?v=c47uqR7XB_c&t=735s)). Laziness affects every model tier ([00:48](https://www.youtube.com/watch?v=c47uqR7XB_c&t=48s)). Claude Code's `/goal` uses a smaller model as its judge ([03:35](https://www.youtube.com/watch?v=c47uqR7XB_c&t=215s), [03:58](https://www.youtube.com/watch?v=c47uqR7XB_c&t=238s)).
 - [[Ras Mic - How AI Agents and Claude Skills Work]], on [[Greg Isenberg]]'s podcast: the models are good enough that context and harness now matter more than which model you pick ([00:48](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=48s), [27:21](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=1641s)). Keep context lean so whichever model you use stays sharp ([31:04](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=1864s)–[31:29](https://www.youtube.com/watch?v=S_oN3vlzpMw&t=1889s)).
 - [[Sergei Chyrkov - Claude Design Full Tutorial]]: designs on Opus 5 in Claude Design, then builds on Sonnet 5 in Claude Code to save tokens ([10:59](https://www.youtube.com/watch?v=T96O8dTzi2Q&t=659s)).
+- [[Jay E - Pairing Jev with Claude Code]]: automates the routing decision itself. A cheap external classifier ([[Jev]]) reads the task and returns the model to use, turning "which tier?" from a manual judgement into a routed one ([05:05](https://www.youtube.com/watch?v=tTnUcSj-QPA&t=305s)). It's the concrete answer to AI LABS' unnamed model-router and to Anthropic's advisor/orchestrator patterns below; the catch is that the fast router can itself be wrong, so its quality needs checking on your own tasks. See [[Add a Jev Decision Layer to Claude Code]].
 - [[AzorAhai1TK - Opus 5.5 One-Shot Programmatic Video]]: a launch-day data point for Opus 5.5 at Extra-High (`xhigh`) effort in Claude Code. One prompt produced a finished, code-rendered one-minute video in about 45 minutes, using about 4% of a $20 plan's weekly limit ([post](https://www.reddit.com/r/ClaudeAI/comments/1wnh4fn/)). A commenter's heavier variant took over 3 hours and about 14% ([comment](https://www.reddit.com/r/ClaudeAI/comments/1wnh4fn/comment/pbgoj3r/)). Long agentic runs at high effort are affordable on small plans, but the cost varies a lot with the brief. Launch-day limits were also raised (Beyond the source).
 
 ## Where sources disagree
@@ -241,9 +243,9 @@ The token-use complaint matches the budget worries in two other sources.
 
 ## Related
 
-- Build it: [[Route Tasks to the Right Claude Model]] · [[Plan-First Workflow]] · [[Set Up Claude Cowork]]
-- Ideas: [[Plan Before Executing]] · [[Subagents and Agent Teams]] · [[Context Window Management]] · [[Agent Laziness]] · [[Agent Skills]] · [[Loop Engineering]]
-- Tools: [[Claude Code]] · [[Claude Cowork]] · [[Claude Managed Agents]] · [[Unlazy]] · [[Claude Design]]
+- Build it: [[Route Tasks to the Right Claude Model]] · [[Add a Jev Decision Layer to Claude Code]] · [[Plan-First Workflow]] · [[Set Up Claude Cowork]]
+- Ideas: [[Plan Before Executing]] · [[Subagents and Agent Teams]] · [[Context Window Management]] · [[Agent Laziness]] · [[Agent Skills]] · [[Loop Engineering]] · [[System 1 and System 2 AI Models]]
+- Tools: [[Claude Code]] · [[Claude Cowork]] · [[Claude Managed Agents]] · [[Unlazy]] · [[Claude Design]] · [[Jev]]
 - Design handoff: [[Create and Reuse a Claude Design System]] · [[Sergei Chyrkov - Claude Design Full Tutorial]]
 - Sources: [[AzorAhai1TK - Opus 5.5 One-Shot Programmatic Video]]
 - People: [[Nate Herk]] · [[The Coding Sloth]] · [[Simon Pittman]] · [[Ras Mic]] · [[AI LABS]] · [[Sergei Chyrkov]]
