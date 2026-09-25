@@ -5,7 +5,7 @@ updated: 2026-09-23
 
 # Claude Knowledge Bank
 
-A curated bank of the best guidance on using and improving Claude, built from tutorials. **29 sources · 31 concepts · 46 techniques · 22 tools · 19 people.**
+A curated bank of the best guidance on using and improving Claude, built from tutorials. **32 sources · 31 concepts · 48 techniques · 22 tools · 22 people.**
 
 **How to use it**
 - *Add a tutorial:* paste a YouTube link (or several) into Claude Code in this folder. The `ingest-youtube` skill does the rest. Reddit posts and GitHub repos can be ingested too; Reddit blocks automated fetching, so paste the post text.
@@ -23,6 +23,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 | Run Claude while you're away | [[Routines and Scheduled Tasks]] · [[Loop Engineering]] · [[Permissions and Approval Gates]] | [[Schedule Recurring Claude Tasks]] · [[Configure Safe Autonomy Permissions]] |
 | Design sites that don't look AI-made | [[Escaping the Default AI Design Look]] · [[Design Systems for Claude]] | [[Create and Reuse a Claude Design System]] · [[Build a Distinctive Site with Design Skills]] · [[Benchmark-Driven Design Critique]] |
 | Make images, video and marketing assets | [[Generating Images and Video with Claude]] | [[Build a Brand-Aware Marketing Project]] · [[Generate On-Brand Images from Claude Code]] · [[Storyboard-First AI Video and Motion Graphics]] · [[Render a Video Entirely in Code with Claude Code]] · [[Auto-Edit Footage from Your Editing History]] |
+| Build animated sites and apps with Claude | [[Generating Images and Video with Claude]] · [[Escaping the Default AI Design Look]] | [[Build an Animated Marketing Site with Claude Code and Kling]] · [[Vibe-Code an Animated Mobile App with Claude]] |
 | Build a second brain or wiki | [[LLM Wiki]] · [[Second Brain Levels]] | [[Bootstrap an LLM Wiki from the Karpathy Gist]] · [[Add a Journal and Personal CRM to a Second Brain]] · [[Second Brain Pain-Point Audit]] |
 | Build an agentic OS | [[Agentic OS]] | [[Build a Level 1 Second Brain]] · [[Build an Agentic OS Dashboard]] |
 | Set up Claude Cowork | [[Claude Cowork]] | [[Set Up Claude Cowork]] |
@@ -32,7 +33,9 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 
 | Source | Creator | Published | Topics |
 |---|---|---|---|
+| [[Codex Community - Testing Opus 5.5 on Design and 3D]] | [[Codex Community]] | 2026-09-23 | Opus 5.5 review: web design, 3D/Three.js, animation; slow-but-stunning verdict |
 | [[AzorAhai1TK - Opus 5.5 One-Shot Programmatic Video]] | u/AzorAhai1TK | 2026-09-22 | Reddit: code-rendered video with Opus 5.5, AI footage editing, usage cost |
+| [[Jason Lee - Vibe Coding an Animated App with Fable 5.1]] | [[Jason Lee]] | 2026-09-18 | Vibe-coding an animated mobile app: Fable 5.1, Higgsfield MCP, Seedance, Expo |
 | [[DynaBeast - Orgtree v2 Multi-Agent Orchestrator App]] | [[DynaBeast]] | 2026-09-12 | Reddit post + repo: agent org chart, docket, role charters, multi-account |
 | [[AI LABS - Eight GitHub Repos to Upgrade Claude Code]] | [[AI LABS]] | 2026-09-14 | verification, token trimming, skill evals, design registry |
 | [[Chase AI - GPT-6 Astra Motion Design in After Effects]] | [[Chase AI]] | 2026-09-14 | motion graphics, storyboards (mostly non-Claude stack) |
@@ -61,6 +64,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 | [[Anthropic - What Is Claude Managed Agents]] | Anthropic | 2026-04-09 | Managed Agents |
 | [[Ras Mic - How AI Agents and Claude Skills Work]] | [[Ras Mic]] | 2026-04-08 | skills, context files, agents |
 | [[Nate Herk - Set Up the Karpathy LLM Wiki with Obsidian]] | [[Nate Herk]] | 2026-04-05 | LLM Wiki setup, Obsidian |
+| [[Nick Saraev - Animated Sites with Claude Code and Kling]] | [[Nick Saraev]] | 2026-03-16 | Animated marketing sites: taste skill, Kling/Nano Banana assets, scroll animation, Netlify |
 
 ## Concepts
 
@@ -142,6 +146,8 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 | [[Benchmark-Driven Design Critique]] | A measured gap report and critic loop against a benchmark design | Design |
 | [[Build Product UI from a Component Registry]] | Consistent app, dashboard and mobile UI from registry components | Design |
 | [[Generate On-Brand Images from Claude Code]] | An image-model skill with brand references and contact-sheet selection | Media |
+| [[Vibe-Code an Animated Mobile App with Claude]] | An animated mobile app: Fable 5.1 + Higgsfield/Seedance assets + Expo | Media |
+| [[Build an Animated Marketing Site with Claude Code and Kling]] | A 3-step animated landing-page pipeline: taste skill → Kling assets → deploy | Media |
 | [[Render a Video Entirely in Code with Claude Code]] | A one-prompt video drawn, voiced and rendered in Python with no media model | Media |
 | [[Auto-Edit Footage from Your Editing History]] | Style-matched rough cuts and themed shorts from past project files and transcripts | Media |
 | [[Storyboard-First AI Video and Motion Graphics]] | Storyboard → agent-written build prompt → targeted revisions | Media |
@@ -168,7 +174,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 
 ## People
 
-- **Creators:** [[AI LABS]] · [[Chase AI]] · [[David Stuckler]] · [[DynaBeast]] · [[Jack Roberts]] · [[Jay E]] · [[Matt Wolfe]] · [[Nate Herk]] · [[Ras Mic]] · [[Sergei Chyrkov]] · [[Simon Pittman]] · [[The Coding Sloth]]
+- **Creators:** [[AI LABS]] · [[Chase AI]] · [[Codex Community]] · [[David Stuckler]] · [[DynaBeast]] · [[Jack Roberts]] · [[Jason Lee]] · [[Jay E]] · [[Matt Wolfe]] · [[Nate Herk]] · [[Nick Saraev]] · [[Ras Mic]] · [[Sergei Chyrkov]] · [[Simon Pittman]] · [[The Coding Sloth]]
 - **Referenced:** [[Andrej Karpathy]] · [[Barry Zhang]] · [[Garry Tan]] · [[Greg Isenberg]] · [[Leon Lin]] · [[Mahesh Murag]] · [[Matt Pocock]]
 
 ---

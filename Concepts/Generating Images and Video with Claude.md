@@ -1,7 +1,7 @@
 ---
 type: concept
 aliases: ["AI Media Generation", "Image Generation"]
-sources: ["[[Jay E - Claude and GPT-Image-2 for On-Brand Design]]", "[[Nate Herk - Claude as a One-Person Marketing Team]]", "[[Chase AI - GPT-6 Astra Motion Design in After Effects]]", "[[Jack Roberts - Design Systems, Critic Loops and a Design OS]]", "[[Nate Herk - The Scrollcraft Website Design Skill]]", "[[AI LABS - Design Skills from Landing Pages to Mobile Apps]]", "[[AzorAhai1TK - Opus 5.5 One-Shot Programmatic Video]]"]
+sources: ["[[Jay E - Claude and GPT-Image-2 for On-Brand Design]]", "[[Nate Herk - Claude as a One-Person Marketing Team]]", "[[Chase AI - GPT-6 Astra Motion Design in After Effects]]", "[[Jack Roberts - Design Systems, Critic Loops and a Design OS]]", "[[Nate Herk - The Scrollcraft Website Design Skill]]", "[[AI LABS - Design Skills from Landing Pages to Mobile Apps]]", "[[AzorAhai1TK - Opus 5.5 One-Shot Programmatic Video]]", "[[Jason Lee - Vibe Coding an Animated App with Fable 5.1]]", "[[Nick Saraev - Animated Sites with Claude Code and Kling]]"]
 tags: [topic/media, topic/marketing, topic/design, topic/skills, topic/mcp, topic/verification]
 ---
 
@@ -18,6 +18,8 @@ Claude doesn't produce the images or video here. It plans assets, writes prompts
 - [[Jay E - Claude and GPT-Image-2 for On-Brand Design]] connects GPT Image 2 to Claude so Claude writes the prompts instead of you ([04:30](https://www.youtube.com/watch?v=uuP3lDlKfCI&t=270s)).
 - [[Nate Herk - Claude as a One-Person Marketing Team]] could use Higgsfield's own interface. Going through a Claude project adds business context, repeatable skills and brand guidelines ([02:57](https://www.youtube.com/watch?v=yCACmFTiCto&t=177s)).
 - [[Chase AI - GPT-6 Astra Motion Design in After Effects]] points out the gap: GPT-6 Astra generates images natively, while Claude Code needs something like the Higgsfield MCP added ([02:54](https://www.youtube.com/watch?v=C8dWdic-oK4&t=174s)).
+- [[Jason Lee - Vibe Coding an Animated App with Fable 5.1]] states the thesis plainly: because Claude has no native image or video model, he adds the Higgsfield MCP connector to Claude Code, and Claude writes every image and video prompt from his spoken description — he never types one himself ([02:50](https://www.youtube.com/watch?v=29Vto7o2I2Q&t=170s), [08:30](https://www.youtube.com/watch?v=29Vto7o2I2Q&t=510s)). The stills come from GPT Image 2.5, the animation from Seedance 2.5.
+- [[Nick Saraev - Animated Sites with Claude Code and Kling]] keeps Claude Code as the orchestrator: it writes the site code and wires the finished clips in, while Nick writes the image/video generation prompts himself and the visuals come from Nano Banana Pro stills fed into Kling 3.0 ([04:46](https://www.youtube.com/watch?v=ZfYvv-0l9NA&t=286s)). (Contrast Jason Lee, where Claude writes the asset prompts too, through the Higgsfield MCP.)
 
 ### Four routes to a model, plus one with no model
 
@@ -99,6 +101,8 @@ Claude doesn't produce the images or video here. It plans assets, writes prompts
 - [[Nate Herk - The Scrollcraft Website Design Skill]]: Kie.ai, which he likens to OpenRouter for media models, fills gaps in a site's assets ([04:52](https://www.youtube.com/watch?v=QUI6Ug4cHnE&t=292s)).
 - [[AI LABS - Design Skills from Landing Pages to Mobile Apps]]: Higgsfield for site visuals, and Seedance for video ([11:05](https://www.youtube.com/watch?v=Ot582-E61ac&t=665s)).
 - [[AzorAhai1TK - Opus 5.5 One-Shot Programmatic Video]]: one prompt to Opus 5.5 in Claude Code produced a one-minute surreal horror video. It used no image or video model, rendered entirely in code, and took about 45 minutes and 4% of a $20 plan's weekly limit ([post](https://www.reddit.com/r/ClaudeAI/comments/1wnh4fn/)). Asked whether it used Higgsfield, the OP said it programs the video directly in Python ([comment](https://www.reddit.com/r/ClaudeAI/comments/1wnh4fn/comment/pbfwutc/)).
+- [[Jason Lee - Vibe Coding an Animated App with Fable 5.1]]: an app-build variant of the connector route. Claude Code (running the Claude model Fable 5.1) drives Higgsfield over MCP to make character art and a moving backdrop — GPT Image 2.5 for stills, Seedance 2.5 to animate them — and even generated the app icon; you describe the shot by voice and Claude writes the prompt ([14:45](https://www.youtube.com/watch?v=29Vto7o2I2Q&t=885s), [23:21](https://www.youtube.com/watch?v=29Vto7o2I2Q&t=1401s)). The first animation pass was glitchy and needed correction rounds, and Higgsfield is the video's sponsor. Build it: [[Vibe-Code an Animated Mobile App with Claude]].
+- [[Nick Saraev - Animated Sites with Claude Code and Kling]]: seed motion by generating a still in Nano Banana Pro, then feed it to Kling 3.0 with a motion constraint (rotate in place, centre of mass doesn't move), and have Claude Code wire the clip into a scroll-scrubbed animation and optimise it — extracting the video's frames to JPEGs tied to scroll position ([09:46](https://www.youtube.com/watch?v=ZfYvv-0l9NA&t=586s)) and compressing a 5.3 MB hero asset to 252 KB ([11:37](https://www.youtube.com/watch?v=ZfYvv-0l9NA&t=697s)). Clips run through Higgsfield's Pro plan at roughly $0.36 each ([03:44](https://www.youtube.com/watch?v=ZfYvv-0l9NA&t=224s); the description's Higgsfield link is an affiliate link). Build it: [[Build an Animated Marketing Site with Claude Code and Kling]].
 
 ## Beyond the source
 
@@ -114,7 +118,7 @@ Claude doesn't produce the images or video here. It plans assets, writes prompts
 ## Related
 
 - Concepts: [[Connecting Claude to External Tools]] · [[Design Systems for Claude]] · [[Escaping the Default AI Design Look]] · [[Verification Before Done]] · [[Permissions and Approval Gates]]
-- Techniques: [[Render a Video Entirely in Code with Claude Code]] · [[Auto-Edit Footage from Your Editing History]] · [[Generate On-Brand Images from Claude Code]] · [[Storyboard-First AI Video and Motion Graphics]] · [[Build a Brand-Aware Marketing Project]] · [[Build a Scroll-Driven Landing Page]]
+- Techniques: [[Render a Video Entirely in Code with Claude Code]] · [[Auto-Edit Footage from Your Editing History]] · [[Generate On-Brand Images from Claude Code]] · [[Storyboard-First AI Video and Motion Graphics]] · [[Build a Brand-Aware Marketing Project]] · [[Build a Scroll-Driven Landing Page]] · [[Vibe-Code an Animated Mobile App with Claude]] · [[Build an Animated Marketing Site with Claude Code and Kling]]
 - Tools: [[FFmpeg]] · [[Higgsfield]] · [[Scrollcraft]] · [[Claude Code]]
 - People: [[Jay E]] · [[Nate Herk]] · [[Chase AI]] · [[Jack Roberts]] · [[AI LABS]]
 - [[Home]]
