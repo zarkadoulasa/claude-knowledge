@@ -2,7 +2,7 @@
 type: person
 role: "Creator — YouTube educator who builds AI operating systems and second brains with Claude Code"
 links: ["https://www.youtube.com/channel/UC2ojq-nuP8ceeHqiroeKhBA", "https://www.skool.com/ai-automation-society/about", "https://x.com/nateherk", "https://www.linkedin.com/in/nateherkelman/"]
-sources: ["[[Nate Herk - Every Level of a Claude Second Brain]]", "[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[Nate Herk - Set Up the Karpathy LLM Wiki with Obsidian]]", "[[Nate Herk - Claude as a One-Person Marketing Team]]", "[[Nate Herk - The Scrollcraft Website Design Skill]]", "[[Nate Herk - Build Skills Instead of Agents]]", "[[Nate Herk - Stanford STORM Method as a Claude Research Skill]]"]
+sources: ["[[Nate Herk - Every Level of a Claude Second Brain]]", "[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[Nate Herk - Set Up the Karpathy LLM Wiki with Obsidian]]", "[[Nate Herk - Claude as a One-Person Marketing Team]]", "[[Nate Herk - The Scrollcraft Website Design Skill]]", "[[Nate Herk - Build Skills Instead of Agents]]", "[[Nate Herk - Stanford STORM Method as a Claude Research Skill]]", "[[Nate Herk - Testing Jev on 12 Real Use Cases]]"]
 tags: [topic/second-brain, topic/claude-code, topic/automation, topic/agents, topic/teams, topic/context, topic/planning, topic/verification, topic/scheduling, topic/memory, topic/skills, topic/design, topic/marketing, topic/media, topic/retrieval, topic/subagents]
 ---
 
@@ -32,6 +32,7 @@ tags: [topic/second-brain, topic/claude-code, topic/automation, topic/agents, to
 - [[Nate Herk - The Scrollcraft Website Design Skill]] — creator (August 2026). Demos [[Scrollcraft]], his free skill for scroll-driven landing pages, by redesigning his community's site live.
 - [[Nate Herk - Build Skills Instead of Agents]] — creator (September 2026). Retells [[Barry Zhang]] and [[Mahesh Murag]]'s Anthropic talk, then turns it into four practices for making skills work, mixing the talk's examples with his own prompts and tests (see the Source note's Caveats).
 - [[Nate Herk - Stanford STORM Method as a Claude Research Skill]] — creator (June 2026). Rebuilds Stanford's STORM method as a free Claude skill: five expert lenses research a topic, a contradiction map surfaces disagreements, and an adversarial pass verifies every citation before returning an HTML briefing. Also the clearest of his subagents-vs-agent-teams explanations. → [[Multi-Perspective Research]], [[Build a STORM Multi-Perspective Research Skill]].
+- [[Nate Herk - Testing Jev on 12 Real Use Cases]] — creator (September 2026). An honest review of [[Jev]], TypeSafe's fast structured-decision model, stress-tested on 12 classification use cases with concrete speed/cost benchmarks. His verdict pairs genuine enthusiasm with load-bearing caveats (64k context, can't reason, quality never measured), and he insists on evals before trusting it. → [[System 1 and System 2 AI Models]], [[Build a Jev Classification Pipeline]].
 
 ## His Herk2 setup (June 2026 video)
 
@@ -129,6 +130,14 @@ From [[Nate Herk - 32 Tricks to Level Up Claude Code]]. The 60% and 95% figures 
   - verify with evidence from outside the draft ([07:59](https://www.youtube.com/watch?v=HIRDzMtuWFk&t=479s)).
   - → [[Audit Skill Descriptions and Triggers]], [[Skill Improvement Loop]], [[Agent Skills]]
 - **How his verification advice changed.** In 32 Tricks he gated work on Claude being 95% confident ([04:31](https://www.youtube.com/watch?v=jqoFP9QapXI&t=271s)). In the skills video he says verification isn't Claude rereading its own work, and needs outside evidence such as a screenshot, test result or source ([07:59](https://www.youtube.com/watch?v=HIRDzMtuWFk&t=479s)). → [[Verification Before Done]]
+
+### On Jev and model routing (from his Jev review)
+
+From [[Nate Herk - Testing Jev on 12 Real Use Cases]].
+
+- **Jev for high-volume classification.** When you have a corpus, thousands of items, or a decision workflow at scale, route it to [[Jev]] rather than a chat model: it returns structured decisions with no tokens, so it's far cheaper and faster, and the cost saving compounds as throughput rises ([04:27](https://www.youtube.com/watch?v=ymgH8jS6Wb8&t=267s), [09:26](https://www.youtube.com/watch?v=ymgH8jS6Wb8&t=566s)). His 1,000-email benchmark: Jev 6s / 9¢ optimized vs a chat model ~5 min / 62¢ ([05:52](https://www.youtube.com/watch?v=ymgH8jS6Wb8&t=352s)). → [[Build a Jev Classification Pipeline]]
+- **The two-model handoff.** Pair a fast decision model with a slow reasoning one: Jev cheaply buckets the corpus, then a smart model writes, analyzes themes, or acts. Jev can't reason and, in browser use, couldn't even type, so it decides and hands off to a model that controls the browser ([03:48](https://www.youtube.com/watch?v=ymgH8jS6Wb8&t=228s), [15:07](https://www.youtube.com/watch?v=ymgH8jS6Wb8&t=907s)). → [[System 1 and System 2 AI Models]]
+- **Eval before you trust a decision model.** Don't plug Jev in and trust it: build a golden dataset (~100 inputs with correct answers) and run Jev, Opus, and a third model through it to compare accuracy, cost, and speed. Cost savings only count if quality holds, which the video never measures ([12:50](https://www.youtube.com/watch?v=ymgH8jS6Wb8&t=770s)). → [[Verification Before Done]]
 
 ## Beyond the source
 

@@ -1,11 +1,11 @@
 ---
 type: index
-updated: 2026-09-23
+updated: 2026-09-24
 ---
 
 # Claude Knowledge Bank
 
-A curated bank of the best guidance on using and improving Claude, built from tutorials. **29 sources · 31 concepts · 46 techniques · 22 tools · 19 people.**
+A curated bank of the best guidance on using and improving Claude, built from tutorials. **33 sources · 32 concepts · 48 techniques · 23 tools · 21 people.**
 
 **How to use it**
 - *Add a tutorial:* paste a YouTube link (or several) into Claude Code in this folder. The `ingest-youtube` skill does the rest. Reddit posts and GitHub repos can be ingested too; Reddit blocks automated fetching, so paste the post text.
@@ -17,6 +17,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 | If you want to… | Read | Then build |
 |---|---|---|
 | Get better results from Claude Code day to day | [[Context Window Management]] · [[Plan Before Executing]] · [[Verification Before Done]] | [[Context Hygiene Routine]] · [[Plan-First Workflow]] · [[Build Verification into Every Task]] |
+| Cut Claude's cost and latency with a fast decision model | [[System 1 and System 2 AI Models]] · [[Choosing a Claude Model]] | [[Add a Jev Decision Layer to Claude Code]] · [[Build a Jev Classification Pipeline]] |
 | Stop agents cutting corners on long tasks | [[Agent Laziness]] · [[Verification Before Done]] | [[Evidence-Gated Completion Ledger]] · [[Tests-First Goal Loop]] |
 | Package your workflows | [[Agent Skills]] · [[Build vs Install Third-Party Skills]] | [[Workflow Audit into Skills]] · [[Build a Skill from a Successful Run]] · [[Audit Skill Descriptions and Triggers]] |
 | Run a standing team of agents | [[Persistent Agent Organizations]] · [[Subagents and Agent Teams]] | [[Write Role Charters for a Multi-Agent Team]] · [[Run a Coordinator-Led Agent Team in Orgtree]] |
@@ -33,6 +34,10 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 | Source | Creator | Published | Topics |
 |---|---|---|---|
 | [[AzorAhai1TK - Opus 5.5 One-Shot Programmatic Video]] | u/AzorAhai1TK | 2026-09-22 | Reddit: code-rendered video with Opus 5.5, AI footage editing, usage cost |
+| [[Jay E - Pairing Jev with Claude Code]] | [[Jay E]] | 2026-09-21 | Jev + Claude Code: System 1/2 pairing, model routing, skill selection, classification |
+| [[Zubair Trabzada - What Jev Actually Is]] | [[Zubair Trabzada]] | 2026-09-21 | Jev explainer/debunk: decision layer, get + connect API key, Jarvis routing |
+| [[Codevolution - What Jev Is and How to Use It]] | [[Codevolution]] | 2026-09-20 | Jev developer tutorial: Noul/Choice/Score, TypeScript SDK, when not to use it |
+| [[Nate Herk - Testing Jev on 12 Real Use Cases]] | [[Nate Herk]] | 2026-09-19 | Jev honest review: 12 use cases, email benchmark, limits, evals, model handoff |
 | [[DynaBeast - Orgtree v2 Multi-Agent Orchestrator App]] | [[DynaBeast]] | 2026-09-12 | Reddit post + repo: agent org chart, docket, role charters, multi-account |
 | [[AI LABS - Eight GitHub Repos to Upgrade Claude Code]] | [[AI LABS]] | 2026-09-14 | verification, token trimming, skill evals, design registry |
 | [[Chase AI - GPT-6 Astra Motion Design in After Effects]] | [[Chase AI]] | 2026-09-14 | motion graphics, storyboards (mostly non-Claude stack) |
@@ -70,6 +75,7 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 - [[Plan Before Executing]]: plan mode, clarifying questions, and planning with a stronger model than the one that implements
 - [[Verification Before Done]]: give Claude a way to check its own work, and decide who judges when it's done
 - [[Choosing a Claude Model]]: model tiers, when to escalate, and routing tasks by difficulty
+- [[System 1 and System 2 AI Models]]: fast structured-decision models (Jev) vs text-generating LLMs (Claude), and why you pair them
 - [[Grounding Research in Real Sources]]: pull from real databases and verify every citation, so Claude stops inventing references
 
 **Skills**
@@ -116,6 +122,8 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 | [[Evidence-Gated Completion Ledger]] | A GATES.md whose runnable checks decide when work is done | Claude Code |
 | [[Parallel Sessions with Git Worktrees]] | Isolated parallel agent sessions | Claude Code |
 | [[Route Tasks to the Right Claude Model]] | A model-routing rule and its configuration | Models |
+| [[Add a Jev Decision Layer to Claude Code]] | Jev-driven model routing and skill selection inside Claude Code | Models |
+| [[Build a Jev Classification Pipeline]] | A high-volume Jev classifier: Playground → SDK → thresholds → evals | Models |
 | [[Workflow Audit into Skills]] | A skills backlog mined from your recurring work | Skills |
 | [[Build a Skill from a Successful Run]] | A SKILL.md distilled from a real run | Skills |
 | [[Audit Skill Descriptions and Triggers]] | One-job skill descriptions that trigger when they should | Skills |
@@ -162,13 +170,14 @@ A curated bank of the best guidance on using and improving Claude, built from tu
 - **Other agent harnesses:** [[OpenAI Codex]] · [[Hermes Agent]] · [[OpenClaw]]
 - **Multi-agent orchestration:** [[Orgtree]]
 - **Cross-tool memory and assistants:** [[LYKN]]
+- **Decision models:** [[Jev]]
 - **Skills:** [[Unlazy]] · [[Scrollcraft]]
 - **Design and media:** [[shadcn]] · [[Higgsfield]] · [[FFmpeg]]
 - **Research and retrieval:** [[Consensus]] · [[Obsidian]] · [[Qdrant]] · [[LightRAG]] · [[GBrain]] · [[Syncthing]]
 
 ## People
 
-- **Creators:** [[AI LABS]] · [[Chase AI]] · [[David Stuckler]] · [[DynaBeast]] · [[Jack Roberts]] · [[Jay E]] · [[Matt Wolfe]] · [[Nate Herk]] · [[Ras Mic]] · [[Sergei Chyrkov]] · [[Simon Pittman]] · [[The Coding Sloth]]
+- **Creators:** [[AI LABS]] · [[Chase AI]] · [[Codevolution]] · [[David Stuckler]] · [[DynaBeast]] · [[Jack Roberts]] · [[Jay E]] · [[Matt Wolfe]] · [[Nate Herk]] · [[Ras Mic]] · [[Sergei Chyrkov]] · [[Simon Pittman]] · [[The Coding Sloth]] · [[Zubair Trabzada]]
 - **Referenced:** [[Andrej Karpathy]] · [[Barry Zhang]] · [[Garry Tan]] · [[Greg Isenberg]] · [[Leon Lin]] · [[Mahesh Murag]] · [[Matt Pocock]]
 
 ---

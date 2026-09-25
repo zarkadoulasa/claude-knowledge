@@ -3,7 +3,7 @@ type: technique
 goal: "Send each kind of task to the cheapest Claude model tier that does it well, with written triggers for moving up, and keep every model name in one file you can update when models change"
 difficulty: intermediate
 time_to_build: "About 30 minutes to write the routing file, subagents and settings; about a week of normal use to tune the triggers (vault estimate)"
-sources: ["[[Knowing More - Every Claude Model Explained]]", "[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[Simon Pittman - Set Up Claude Cowork]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]"]
+sources: ["[[Knowing More - Every Claude Model Explained]]", "[[Nate Herk - 32 Tricks to Level Up Claude Code]]", "[[The Coding Sloth - 1000 Hours of Claude Code Lessons]]", "[[Simon Pittman - Set Up Claude Cowork]]", "[[AI LABS - The Unlazy Skill for Lazy Agents]]", "[[Ras Mic - How AI Agents and Claude Skills Work]]", "[[Jay E - Pairing Jev with Claude Code]]"]
 tools: ["[[Claude Code]]", "[[Claude Cowork]]"]
 tags: [topic/models, topic/claude-code, topic/cowork, topic/subagents, topic/skills, topic/context]
 ---
@@ -284,6 +284,7 @@ Don't start a long task on a model the rule says is wrong without asking me.
 - **Change effort before changing model.** Anthropic's docs say adjusting effort is often a better lever than changing model. Try `/effort xhigh` on your current model before escalating, and `/effort low` on routine sessions (Beyond the source).
 - **Efficiency-first vs capability-first.** A cost-sensitive project can start every task type on the small tier and move up only where it fails. A high-stakes project can start on the flagship and step down once it's reliable. These are Anthropic's two starting strategies (Beyond the source).
 - **API and managed pipelines.** Outside Claude Code, the same table maps onto an orchestrator with cheaper workers. [[Claude Managed Agents]] multi-agent orchestration lets each agent in the roster have its own model (Beyond the source).
+- **Automate the choice with a decision model.** This note routes by written rules that you and Claude follow. [[Jay E - Pairing Jev with Claude Code]] instead hands the "which tier?" call to [[Jev]], a fast, cheap [[System 1 and System 2 AI Models|System 1]] classifier that reads the task and returns the model, toggled on per session with a `/jev on` skill ([04:43](https://www.youtube.com/watch?v=tTnUcSj-QPA&t=283s), [06:26](https://www.youtube.com/watch?v=tTnUcSj-QPA&t=386s)). It's the built version of the model-router AI LABS wanted; the trade-off is a third-party dependency plus the router's own error rate, so validate its picks against this decision table. Full build: [[Add a Jev Decision Layer to Claude Code]].
 - **Cross-vendor routing.** The Coding Sloth notes that Cursor, OpenCode and Codex let you mix models from different vendors ([08:05](https://www.youtube.com/watch?v=YAsxyoTWFDA&t=485s)–[08:10](https://www.youtube.com/watch?v=YAsxyoTWFDA&t=490s)). Keep the tier table and add a vendor column to the Registry.
 - **Enterprise default.** Admins can set an organisation-wide default model for chat, Cowork and Claude Code. The routing file then only covers when to leave that default (Beyond the source).
 
@@ -351,7 +352,7 @@ Don't start a long task on a model the rule says is wrong without asking me.
 
 ## Related
 
-- Idea: [[Choosing a Claude Model]]
-- Pairs with: [[Plan-First Workflow]] · [[Plan Before Executing]] · [[Subagents and Agent Teams]] · [[Context Hygiene Routine]] · [[Keep CLAUDE.md Lean]] · [[Agent Skills]] · [[Evidence-Gated Completion Ledger]] · [[Schedule Recurring Claude Tasks]] · [[Set Up Claude Cowork]]
-- Tools: [[Claude Code]] · [[Claude Cowork]] · [[Unlazy]] · [[Claude Managed Agents]]
+- Idea: [[Choosing a Claude Model]] · [[System 1 and System 2 AI Models]]
+- Pairs with: [[Add a Jev Decision Layer to Claude Code]] · [[Plan-First Workflow]] · [[Plan Before Executing]] · [[Subagents and Agent Teams]] · [[Context Hygiene Routine]] · [[Keep CLAUDE.md Lean]] · [[Agent Skills]] · [[Evidence-Gated Completion Ledger]] · [[Schedule Recurring Claude Tasks]] · [[Set Up Claude Cowork]]
+- Tools: [[Claude Code]] · [[Claude Cowork]] · [[Unlazy]] · [[Claude Managed Agents]] · [[Jev]]
 - People: [[Nate Herk]] · [[The Coding Sloth]] · [[Simon Pittman]] · [[Ras Mic]] · [[AI LABS]]
