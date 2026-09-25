@@ -2,7 +2,7 @@
 type: person
 role: "Creator — runs the RoboNuggets YouTube channel and community; author of the ARMS framework for an agentic OS"
 links: ["https://www.youtube.com/@RoboNuggets", "https://www.skool.com/@robo", "https://www.linkedin.com/in/j-enri/", "https://www.twitter.com/robonuggets"]
-sources: ["[[Jay E - The ARMS Framework for a Claude Agentic OS]]", "[[Chase AI - The Agentic OS Setup for Claude Code]]", "[[Jay E - Claude and GPT-Image-2 for On-Brand Design]]", "[[Nate Herk - Claude as a One-Person Marketing Team]]"]
+sources: ["[[Jay E - The ARMS Framework for a Claude Agentic OS]]", "[[Chase AI - The Agentic OS Setup for Claude Code]]", "[[Jay E - Claude and GPT-Image-2 for On-Brand Design]]", "[[Nate Herk - Claude as a One-Person Marketing Team]]", "[[Jay E - Pairing Jev with Claude Code]]"]
 tags: [topic/agentic-os, topic/skills, topic/memory, topic/scheduling, topic/mcp, topic/claude-code, topic/media, topic/design, topic/marketing]
 ---
 
@@ -17,6 +17,7 @@ tags: [topic/agentic-os, topic/skills, topic/memory, topic/scheduling, topic/mcp
 
 - [[Jay E - The ARMS Framework for a Claude Agentic OS]] — creator.
 - [[Jay E - Claude and GPT-Image-2 for On-Brand Design]] — creator (April 2026, the day after GPT Image 2 launched). Claude Code drives OpenAI's image model through his own skill. He also shows RUBRIC, his AI command centre, where he stores references ([08:27](https://www.youtube.com/watch?v=uuP3lDlKfCI&t=507s)).
+- [[Jay E - Pairing Jev with Claude Code]] — creator (Sept 2026 Jev launch day). His thesis: pair Jev, a fast "System 1" decision model, with Claude as the "System 2" reasoner, then wire Jev into Claude Code for model routing and skill selection.
 
 ## Ideas associated with him
 
@@ -40,6 +41,9 @@ tags: [topic/agentic-os, topic/skills, topic/memory, topic/scheduling, topic/mcp
   - A numbered 5x5 grid costs one image; pick a cell and have it regenerated at top quality ([10:09](https://www.youtube.com/watch?v=uuP3lDlKfCI&t=609s), [10:22](https://www.youtube.com/watch?v=uuP3lDlKfCI&t=622s)).
   - To add Kling 3.0, paste fal's LLM docs into the same session and ask Claude to extend the skill ([11:47](https://www.youtube.com/watch?v=uuP3lDlKfCI&t=707s)).
 - **Image mockups for UI.** An image reference gets Claude about 50–60% of the way to the UI you want, and it doesn't translate cleanly into HTML ([13:58](https://www.youtube.com/watch?v=uuP3lDlKfCI&t=838s)). Generate several variants and pick by human taste ([14:26](https://www.youtube.com/watch?v=uuP3lDlKfCI&t=866s)).
+- **Pair System 1 with System 2.** The one takeaway from his Jev video: combine a fast decision model like [[Jev]] with a text/reasoning model like the Claude models rather than choosing one ([02:45](https://www.youtube.com/watch?v=tTnUcSj-QPA&t=165s)). → [[System 1 and System 2 AI Models]]
+- **`/jev on` model-routing skill.** He builds a toggle skill command so, for a whole Claude Code session, Jev picks the cheapest adequate model per task — routing a file-path lookup to a Haiku helper instead of the Opus 5 default ([06:26](https://www.youtube.com/watch?v=tTnUcSj-QPA&t=386s), [06:44](https://www.youtube.com/watch?v=tTnUcSj-QPA&t=404s)). → [[Add a Jev Decision Layer to Claude Code]]
+- **Jev-powered skill selection.** Feed the task as input and your ~145 skills as options, and Jev returns the right skill for Claude to load — about 5s across 14 tests versus ~30s for Opus 5 ([07:35](https://www.youtube.com/watch?v=tTnUcSj-QPA&t=455s)).
 
 ## Where sources agree and disagree
 
